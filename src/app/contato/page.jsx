@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
+import ContactForm from "@components/comProduto/ContactForm"; // Importe o componente ContactForm aqui
 
 const ContactPage = () => {
   const [success, setSuccess] = useState(false);
@@ -61,39 +61,10 @@ const ContactPage = () => {
             😊
           </div>
         </div>
-        {/* FORM CONTAINER */}
-        <form
-          onSubmit={sendEmail}
-          ref={form}
-          className="h-1/2 text-slate-50 lg:h-full lg:w-1/2 bg-slate-600 rounded-xl text-xl flex flex-col gap-8 justify-center p-24"
-        >
-          <span>Caro Grupo Timber,</span>
-          <textarea
-            rows={6}
-            className="bg-transparent border-b-2 border-b-slate-50 outline-none resize-none"
-            name="user_message"
-          />
-          <span>My mail address is:</span>
-          <input
-            name="user_email"
-            type="text"
-            className="bg-transparent border-b-2 border-b-slate-50 outline-none"
-          />
-          <span>Regards</span>
-          <button className="bg-red-700 rounded font-semibold text-slate-100 p-4">
-            Enviar
-          </button>
-          {success && (
-            <span className="text-green-600 font-semibold">
-              Your message has been sent successfully!
-            </span>
-          )}
-          {error && (
-            <span className="text-red-600 font-semibold">
-              Something went wrong!
-            </span>
-          )}
-        </form>
+        <div className="flex items-center">
+          {/* FORM CONTAINER */}
+          <ContactForm />
+        </div>
       </div>
     </motion.div>
   );
