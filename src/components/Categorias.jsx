@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Badge from "./Resources/Badge";
 import Modal from "./Resources/Modal";
-import ContactForm from "@components/ContactForm";
+import ContactForm from "./ContactForm";
 
 const Categorias = ({ category, products }) => {
   const [showModal, setShowModal] = useState(false);
