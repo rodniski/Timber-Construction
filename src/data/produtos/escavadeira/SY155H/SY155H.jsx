@@ -96,8 +96,6 @@ const SY155H = {
               "Pressão sobre o Solo": "43 kPA",
               "Força de Escavação da Caçamba": "103 KN",
               "Força de Escavação do braço": "67KN",
-              "Força de Escavação da Caçamba": "103 KN",
-              "Força de Escavação do Braço": "67 KN",
               "Capacidade do Tanque de Combustível": "240 l",
               "Capacidade do Tanque Hidráulico": "150 l",
           },
