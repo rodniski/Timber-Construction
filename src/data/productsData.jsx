@@ -210,7 +210,7 @@ const ProductsData = {
     },
   },
   Motoniveladora: {
-    image: "/motoniveladora/2.png",
+    image: "/Motoniveladora/2.png",
     description: "Domine o terreno com precisão e potência",
     href: "/produtos/motoniveladora/",
     products: {
