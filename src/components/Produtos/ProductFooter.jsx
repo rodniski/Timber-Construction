@@ -20,7 +20,7 @@ const ProductFooter = ({ specs }) => {
         transition={{ delay: 0.2 }}
         className="container mx-auto px-4"
       >
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div className="md:col-span-1">
             <div className="mb-8">
               <h2 className="text-2xl font-bold text-red-600 mb-4">

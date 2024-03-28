@@ -58,19 +58,15 @@ produtos.sort((a, b) => a.name.localeCompare(b.name));
 
 const callsToAction = [
   { name: "Mineração", href: "/produtos/caminhao", icon: GiMiningHelmet },
-  {
-    name: "Categorias",
-    href: "/produtos",
-    icon: BiSolidCategoryAlt,
-  },
+  { name: "Categorias", href: "/produtos", icon: BiSolidCategoryAlt },
 ];
 const itemVariants = {
   open: {
     opacity: 1,
     y: 0,
-    transition: { type: "spring", stiffness: 300, damping: 24 }
+    transition: { type: "spring", stiffness: 300, damping: 24 },
   },
-  closed: { opacity: 0, y: 20, transition: { duration: 0.2 } }
+  closed: { opacity: 0, y: 20, transition: { duration: 0.2 } },
 };
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -81,18 +77,18 @@ export default function Nav() {
   const [hovering, setHovering] = useState(false);
 
   return (
-    <header className="bg-slate-100">
+    <header className="bg-slate-100 mb-5">
       <nav
-        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+        className="mx-auto flex max-w-7xl items-center justify-between p-6 md:px-8"
         aria-label="Global"
       >
-        <div className="flex lg:flex-1">
+        <div className="flex md:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Timber | Sany</span>
-            <img className="h-20 w-auto" src="/logo.png" alt="" />
+            <img className="h-14 md:h-16 lg:h-20 w-auto" src="/logo.png" alt="" />
           </a>
         </div>
-        <div className="flex lg:hidden">
+        <div className="flex md:hidden">
           <button
             type="button"
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
@@ -103,7 +99,7 @@ export default function Nav() {
           </button>
         </div>
 
-        <Popover.Group className="hidden lg:flex lg:gap-x-12 focus:text-slate-200">
+        <Popover.Group className="hidden md:flex md:gap-x-12 focus:text-slate-200">
           <Popover
             className="relative"
             onMouseEnter={() => setHovering(true)}
@@ -117,64 +113,64 @@ export default function Nav() {
               />
             </Popover.Button>
             <Transition
-        as={Fragment}
-        show={hovering}
-        enter="transition ease-out duration-200"
-        enterFrom="opacity-0 translate-y-1"
-        enterTo="opacity-100 translate-y-0"
-        leave="transition ease-in duration-150"
-        leaveFrom="opacity-100 translate-y-0"
-        leaveTo="opacity-0 translate-y-1"
-      >
-        <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg">
-          <div className="p-4 ">
-            {produtos.map((item, index) => (
-              <motion.div
-                key={index}
-                whileHover={{ scale: 1.05 }}
-                transition={{ duration: 0.3 }}
-                className="group relative flex items-center gap-x-6 rounded-lg p-4 text-lg leading-6 hover:bg-slate-300"
-              >
-                <motion.div
-                  whileHover={{ rotate: 360 }}
-                  transition={{ duration: 0.3 }}
-                  className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
-                >
-                  <item.icon
-                    className="h-6 w-6 text-stone-800 group-hover:text-red-700"
-                    aria-hidden="true"
-                  />
-                </motion.div>
-                <div className="flex-auto">
-                  <a
-                    href={item.href}
-                    className="block font-semibold text-stone-900"
-                  >
-                    {item.name}
-                    <span className="absolute inset-0" />
-                  </a>
-                  <p className="mt-1 text-gray-600">{item.description}</p>
+              as={Fragment}
+              show={hovering}
+              enter="transition ease-out duration-200"
+              enterFrom="opacity-0 translate-y-1"
+              enterTo="opacity-100 translate-y-0"
+              leave="transition ease-in duration-150"
+              leaveFrom="opacity-100 translate-y-0"
+              leaveTo="opacity-0 translate-y-1"
+            >
+              <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg">
+                <div className="p-4 ">
+                  {produtos.map((item, index) => (
+                    <motion.div
+                      key={index}
+                      whileHover={{ scale: 1.05 }}
+                      transition={{ duration: 0.3 }}
+                      className="group relative flex items-center gap-x-6 rounded-lg p-4 text-lg leading-6 hover:bg-slate-300"
+                    >
+                      <motion.div
+                        whileHover={{ rotate: 360 }}
+                        transition={{ duration: 0.3 }}
+                        className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                      >
+                        <item.icon
+                          className="h-6 w-6 text-stone-800 group-hover:text-red-700"
+                          aria-hidden="true"
+                        />
+                      </motion.div>
+                      <div className="flex-auto">
+                        <a
+                          href={item.href}
+                          className="block font-semibold text-stone-900"
+                        >
+                          {item.name}
+                          <span className="absolute inset-0" />
+                        </a>
+                        <p className="mt-1 text-gray-600">{item.description}</p>
+                      </div>
+                    </motion.div>
+                  ))}
                 </div>
-              </motion.div>
-            ))}
-          </div>
-          <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
-            {callsToAction.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="flex items-center justify-center gap-x-2.5 p-3 text-lg font-semibold leading-6 text-gray-900 hover:bg-gray-100"
-              >
-                <item.icon
-                  className="h-5 w-5 flex-none text-gray-400"
-                  aria-hidden="true"
-                />
-                {item.name}
-              </a>
-            ))}
-          </div>
-        </Popover.Panel>
-      </Transition>
+                <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
+                  {callsToAction.map((item) => (
+                    <a
+                      key={item.name}
+                      href={item.href}
+                      className="flex items-center justify-center gap-x-2.5 p-3 text-lg font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+                    >
+                      <item.icon
+                        className="h-5 w-5 flex-none text-gray-400"
+                        aria-hidden="true"
+                      />
+                      {item.name}
+                    </a>
+                  ))}
+                </div>
+              </Popover.Panel>
+            </Transition>
           </Popover>
 
           <a
@@ -190,7 +186,7 @@ export default function Nav() {
             Grupo Timber
           </a>
         </Popover.Group>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+        <div className="hidden md:flex md:flex-1 md:justify-end">
           <a
             href="/contato"
             className="text-lg font-semibold leading-6 text-gray-900 hover:text-red-700"
@@ -203,7 +199,7 @@ export default function Nav() {
       {/* Menu Mobile */}
       <Dialog
         as="div"
-        className="lg:hidden"
+        className="md:hidden"
         open={mobileMenuOpen}
         onClose={setMobileMenuOpen}
       >
@@ -215,7 +211,7 @@ export default function Nav() {
           <div className="flex items-center px-6 justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Timber | Sany</span>
-              <img className="h-8 w-auto" src="/logo.png" alt="" />
+              <img className="h-14 w-auto" src="/logo.png" alt="" />
             </a>
             <button
               type="button"
@@ -251,12 +247,11 @@ export default function Nav() {
                             key={item.name}
                             as="a"
                             href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-lg font-semibold leading-7 text-gray-900 flex gap-2 items-center"
+                            className="block rounded-lg py-2 pl-6 pr-3 font-semibold leading-7 text-gray-900 flex gap-2 items-center"
                           >
-                            <img
-                              src={item.image}
-                              alt={item.name}
-                              className="h-9 w-10 flex-none rounded-lg bg-gray-50"
+                            <item.icon
+                              className="h-5 w-5 flex-none text-gray-400"
+                              aria-hidden="true"
                             />
                             <span>{item.name}</span>
                           </Disclosure.Button>
@@ -284,12 +279,12 @@ export default function Nav() {
               </div>
 
               {/* Contato e Categorias*/}
-              <div className="grid grid-cols-2 b-0 divide-x rounded-lg divide-gray-900/5 bg-slate-100 px-2 py-3 fixed bottom-0">
+              <div className="grid grid-cols-2 sm:max-w-sm w-full b-0 divide-x rounded-lg divide-gray-900/5 bg-slate-100 px-2 py-3 fixed bottom-0">
                 {callsToAction.map((item) => (
                   <a
+                    className="flex items-center justify-center gap-x-4 p-3 text-lg font-semibold leading-6 text-gray-900"
                     key={item.name}
                     href={item.href}
-                    className="flex items-center justify-center gap-x-4 p-3 text-lg font-semibold leading-6 text-gray-900"
                   >
                     <item.icon
                       className="h-5 w-5 flex-none text-gray-400"

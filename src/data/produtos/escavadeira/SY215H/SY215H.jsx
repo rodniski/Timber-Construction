@@ -19,7 +19,7 @@ const SY215H = {
   },
   dev: {
       titulo: "Eficiência e Conforto",
-      "seg.Desc": "A escavadeira SY215H combina eficiência excepcional com o máximo conforto para o operador, proporcionando um ambiente de trabalho produtivo e agradável.",
+      segDesc: "A escavadeira SY215H combina eficiência excepcional com o máximo conforto para o operador, proporcionando um ambiente de trabalho produtivo e agradável.",
       image: "/Escavadeira/SY215H/2.png",
       High: {
           High1: {

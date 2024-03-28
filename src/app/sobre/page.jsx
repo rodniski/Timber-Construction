@@ -28,16 +28,26 @@ const AboutPage = () => {
         <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-0 xl:w-1/2">
           {/* BIOGRAPHY CONTAINER */}
           <div className="flex flex-col gap-12 justify-center">
-            {/* BIOGRAPHY IMAGE */}
-            
+
+            {/* SVG CONTAINER */}
+            <div className="lg:hidden  w-full h-full">
+              <Brain scrollYProgress={scrollYProgress} />
+            </div>
             {/* BIOGRAPHY TITLE */}
             <h1 className="font-bold text-2xl">SOBRE A SANY</h1>
             {/* BIOGRAPHY DESC */}
             <p className="text-lg">
-            A SANY é uma empresa global, presente em mais de 150 países. Oferecemos equipamentos de alta qualidade, reconhecidos por sua durabilidade e confiabilidade. Nossas máquinas são conhecidas pela tecnologia avançada, capacidade e custo-benefício. Atendemos às necessidades de empresas em todo o mundo, desde escavadeiras até guindastes e equipamentos portuários.  </p>
+              A SANY é uma empresa global, presente em mais de 150 países.
+              Oferecemos equipamentos de alta qualidade, reconhecidos por sua
+              durabilidade e confiabilidade. Nossas máquinas são conhecidas pela
+              tecnologia avançada, capacidade e custo-benefício. Atendemos às
+              necessidades de empresas em todo o mundo, desde escavadeiras até
+              guindastes e equipamentos portuários.{" "}
+            </p>
             {/* BIOGRAPHY QUOTE */}
             <span className="italic">
-            Nosso objetivo é liderar o setor de máquinas pesadas, proporcionando soluções inovadoras e de alto desempenho.
+              Nosso objetivo é liderar o setor de máquinas pesadas,
+              proporcionando soluções inovadoras e de alto desempenho.
             </span>
             {/* BIOGRAPHY SIGN SVG*/}
             <div className="self-end">
@@ -67,7 +77,9 @@ const AboutPage = () => {
               ></path>
             </motion.svg>
           </div>
+
           {/* SKILLS CONTAINER */}
+
           <div className="flex flex-col gap-12 justify-center" ref={skillRef}>
             {/* SKILL TITLE */}
             <motion.h1
@@ -111,7 +123,6 @@ const AboutPage = () => {
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-red-700 hover:text-white">
                 Portuários
               </div>
-
             </motion.div>
             {/* SKILL SCROLL SVG */}
             <motion.svg
@@ -165,7 +176,7 @@ const AboutPage = () => {
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
                     Sany chega ao Brasil
                   </div>
-                {/* DATA */}
+                  {/* DATA */}
                   <div className="p-3 text-red-700 text-sm font-semibold">
                     2007
                   </div>
@@ -197,7 +208,7 @@ const AboutPage = () => {
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                  Timber fecha parceria para representar Sany.
+                    Timber fecha parceria para representar Sany.
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
@@ -207,7 +218,6 @@ const AboutPage = () => {
                   <div className="p-3 text-red-400 text-sm font-semibold">
                     2018{" "}
                   </div>
-                 
                 </div>
               </div>
               {/* EXPERIENCE LIST ITEM */}
@@ -216,7 +226,7 @@ const AboutPage = () => {
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                  Timber amplia o portfólio de produtos Sany{" "}
+                    Timber amplia o portfólio de produtos Sany{" "}
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">

@@ -1,13 +1,16 @@
+
 'use client'
 
-import React from "react";
+
+import React, { useState } from "react";
 import { motion } from "framer-motion";
-import Badge from "@/components/Resources/Badge";
-import LeadForm from "@/components/LeadForm";
+import Badge from "./Resources/Badge";
+import Modal from "./Resources/Modal";
+import ContactForm from "@components/ContactForm";
 
 const Categorias = ({ category, products }) => {
-  const [showModal, setShowModal] = React.useState(false);
-  const [selectedProduct, setSelectedProduct] = React.useState(null);
+  const [showModal, setShowModal] = useState(false);
+  const [selectedProduct, setSelectedProduct] = useState(null);
 
   const handleOpenModal = (product) => {
     setSelectedProduct(product);
@@ -94,11 +97,12 @@ const Categorias = ({ category, products }) => {
         </div>
 
         {showModal && selectedProduct && (
-          <LeadForm
-            productName={selectedProduct.name}
-            productImage={selectedProduct.Src}
-            onCloseModal={handleCloseModal}
-          />
+          <Modal onClose={handleCloseModal} productName={selectedProduct.name}>
+            <ContactForm
+              productName={selectedProduct.name}
+              productImage={selectedProduct.Src}
+            />
+          </Modal>
         )}
       </div>
     </div>

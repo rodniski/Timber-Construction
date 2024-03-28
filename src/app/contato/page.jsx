@@ -4,35 +4,7 @@ import { useRef, useState } from "react";
 import ContactForm from "@components/ContactForm"; // Importe o componente ContactForm aqui
 
 const ContactPage = () => {
-  const [success, setSuccess] = useState(false);
-  const [error, setError] = useState(false);
   const text = "Diga Olá";
-
-  const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-    setError(false);
-    setSuccess(false);
-
-    emailjs
-      .sendForm(
-        process.env.NEXT_PUBLIC_SERVICE_ID,
-        process.env.NEXT_PUBLIC_TEMPLATE_ID,
-        form.current,
-        process.env.NEXT_PUBLIC_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          setSuccess(true);
-          form.current.reset();
-        },
-        () => {
-          setError(true);
-        }
-      );
-  };
-
   return (
     <motion.div
       className="h-full"
@@ -61,7 +33,7 @@ const ContactPage = () => {
             😊
           </div>
         </div>
-        <div className="flex items-center">
+        <div className="flex justify-center items-center">
           {/* FORM CONTAINER */}
           <ContactForm />
         </div>
