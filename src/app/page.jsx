@@ -12,19 +12,30 @@ const Homepage = () => {
       transition={{ duration: 1, delay: 0.5 }}
     >
       <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
+        <div>
+          <h1 className="md:hidden pt-8 text-3xl font-bold">
+            Excelência na <span class="text-red-700">Construção</span> <br />{" "}
+            Inovação em <span class="text-red-700">Maquinário</span>.
+          </h1>
+        </div>
         {/* IMAGE CONTAINER */}
         <div className="h-1/2 lg:h-full lg:w-1/2 relative">
-          <Image src="/Escavadeira/SY135C/1.png" alt="" fill className="object-contain" />
+          <Image
+            src="/Escavadeira/SY135C/1.png"
+            alt=""
+            fill
+            className="object-contain"
+          />
         </div>
         {/* TEXT CONTAINER */}
-        <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center">
+        <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 items-start justify-center">
           {/* TITLE */}
-          <h1 className="text-4xl md:text-6xl font-bold">
+          <h1 className="hidden md:block text-3xl md:text-4xl lg:text-5xl font-bold">
             Excelência na <span class="text-red-700">Construção</span> <br />{" "}
             Inovação em <span class="text-red-700">Maquinário</span>.
           </h1>
           {/* DESC */}
-          <p className="md:text-xl ">
+          <p className="text-base md:text-lg lg:text-xl px-2">
             Com dedicação à qualidade e domínio da tecnologia de construção,
             nosso portfólio destaca uma variedade de projetos de maquinário que
             incorporam nosso compromisso com o desempenho superior.
