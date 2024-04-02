@@ -21,7 +21,7 @@ const Homepage = () => {
         {/* IMAGE CONTAINER */}
         <div className="h-1/2 lg:h-full lg:w-1/2 relative">
           <Image
-            src="/Escavadeira/SY135C/1.png"
+            src="/escavadeira/SY135C/1.png"
             alt=""
             fill
             className="object-contain"

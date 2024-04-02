@@ -26,7 +26,7 @@ const produtos = [
   {
     name: "Escavadeira",
     description: "Potência para a sua obra.",
-    href: "/produtos/Escavadeira",
+    href: "/produtos/escavadeira",
     icon: BuildingOffice2Icon,
   },
   {

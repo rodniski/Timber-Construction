@@ -2,7 +2,7 @@ const SY215LR = {
   categoria: "Escavadeira de longo alcance",
   name: "SY215LR",
   desc: "A Escavadeira SY215LR foi projetada para operações que exijam longo alcance. Possui motor personalizado, componentes reforçados, alta eficiência operacional, baixo consumo de combustível, fácil manutenção e cabine confortável.",
-  image: "/Escavadeira/SY215LR/1.png",
+  image: "/escavadeira/SY215LR/1.png",
   features: {
     high1: {
       descrição: "Peso Operacional: 24150 KG",
@@ -22,7 +22,7 @@ const SY215LR = {
     titulo: "Desenvolvimento da Escavadeira de Longo Alcance Sany SY215LR",
     segDesc:
       "Desenvolvida para enfrentar os desafios de grandes projetos de escavação com eficiência e precisão.",
-    image: "/Escavadeira/SY215LR/2.PNG",
+    image: "/escavadeira/SY215LR/2.PNG",
     High: {
       High1: {
         image: "/svgs/spin.svg",

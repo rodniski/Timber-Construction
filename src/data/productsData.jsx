@@ -4,12 +4,12 @@ const ProductsData = {
       "https://grupotimber.com.br/wp-content/uploads/2020/04/500H-640x480-1-600x450.png",
     description:
       "Escavando caminhos para o sucesso com eficiência e confiabilidade incomparáveis.",
-    href: "/produtos/Escavadeira",
+    href: "/produtos/escavadeira",
     products: {
       SY215H: {
         name: "SY215H",
         Src: "https://grupotimber.com.br/wp-content/uploads/2024/02/215H-CATALOGO.png",
-        href: "/produtos/Escavadeira/SY215H",
+        href: "/produtos/escavadeira/SY215H",
         Tipo: "Escavadeira média",
         Peso: "21.900 KG",
         Potencia: "178 HP/2.000 RPM",
@@ -18,7 +18,7 @@ const ProductsData = {
       SY135C: {
         name: "SY135C",
         Src: "https://grupotimber.com.br/wp-content/uploads/2020/04/135u-640x480-1-600x450.png",
-        href: "/produtos/Escavadeira/SY135C",
+        href: "/produtos/escavadeira/SY135C",
         Tipo: "Escavadeira média",
         Peso: "13.800 KG",
         Potencia: "98 HP/2.000 RPM",
@@ -27,7 +27,7 @@ const ProductsData = {
       SY155H: {
         name: "SY155H",
         Src: "https://grupotimber.com.br/wp-content/uploads/2020/04/640x480-155H-600x450.png",
-        href: "/produtos/Escavadeira/SY155H",
+        href: "/produtos/escavadeira/SY155H",
         Tipo: "Escavadeira média",
         Peso: "14.100 KG",
         Potencia: "113 HP/2.200 RPM",
@@ -36,7 +36,7 @@ const ProductsData = {
       SY215C_10: {
         name: "SY215C_10",
         Src: "https://grupotimber.com.br/wp-content/uploads/2023/05/SY215c-10.png",
-        href: "/produtos/Escavadeira/SY215C10",
+        href: "/produtos/escavadeira/SY215C10",
         Tipo: "Escavadeira média",
         Peso: "22.000 KG",
         Potencia: "158,9 HP/2.000 RPM",
@@ -45,7 +45,7 @@ const ProductsData = {
       SY215LR: {
         name: "SY215LR",
         Src: "https://grupotimber.com.br/wp-content/uploads/2023/05/SY245lr.png",
-        href: "/produtos/Escavadeira/SY215LR",
+        href: "/produtos/escavadeira/SY215LR",
         Tipo: "Escavadeira de longo alcance",
         Peso: "24.150 KG",
         Potencia: "158,9 HP/2.000 RPM",
@@ -54,7 +54,7 @@ const ProductsData = {
       SY245H: {
         name: "SY245H",
         Src: "https://grupotimber.com.br/wp-content/uploads/2023/05/SY245h.png",
-        href: "/produtos/Escavadeira/SY245H",
+        href: "/produtos/escavadeira/SY245H",
         Tipo: "Escavadeira média",
         Peso: "25.500 KG",
         Potencia: "197 HP/2.100 RPM",
@@ -63,7 +63,7 @@ const ProductsData = {
       SY365H: {
         name: "SY365H",
         Src: "https://grupotimber.com.br/wp-content/uploads/2023/05/SY365H_Detalhes.jpg",
-        href: "/produtos/Escavadeira/SY365H",
+        href: "/produtos/escavadeira/SY365H",
         Tipo: "Escavadeira grande",
         Peso: "36.000 KG",
         Potencia: "284,3 HP/2.000 RPM",
@@ -72,7 +72,7 @@ const ProductsData = {
       SY500H: {
         name: "SY500H",
         Src: "https://grupotimber.com.br/wp-content/uploads/2020/04/500H-640x480-1-600x450.png",
-        href: "/produtos/Escavadeira/SY500H",
+        href: "/produtos/escavadeira/SY500H",
         Tipo: "Escavadeira grande",
         Peso: "49.500 KG",
         Potencia: "402 HP/1.800 RPM",
@@ -81,7 +81,7 @@ const ProductsData = {
       SY750H: {
         name: "SY750H",
         Src: "https://grupotimber.com.br/wp-content/uploads/2023/05/SY750H.jpg",
-        href: "/produtos/Escavadeira/SY750H",
+        href: "/produtos/escavadeira/SY750H",
         Tipo: "Escavadeira grande",
         Peso: "76.200 KG",
         Potencia: "377/1800 KW/RPM",
@@ -90,7 +90,7 @@ const ProductsData = {
       SY980H: {
         name: "SY980H",
         Src: "https://grupotimber.com.br/wp-content/uploads/2020/04/SY980H.png",
-        href: "/produtos/Escavadeira/SY980H",
+        href: "/produtos/escavadeira/SY980H",
         Tipo: "Escavadeira grande",
         Peso: "95.800 KG",
         Potencia: "425 KW/1.800 RPM",
@@ -99,13 +99,13 @@ const ProductsData = {
     },
   },
   "Mini Escavadeira": {
-    image: "/MiniEscavadeira/SY16C/2.png",
+    image: "/miniescavadeira/SY16C/2.png",
     description: "Versatilidade e eficiência em espaços restritos.",
     href: "/produtos/Mini-escavadeira",
     products: {
       SY16C: {
         name: "SY16C",
-        Src: "/MiniEscavadeira/SY16C/1.png",
+        Src: "/miniescavadeira/SY16C/1.png",
         href: "/produtos/Mini-escavadeira/SY16C",
         Peso: "1.820 KG",
         Potencia: "15cv / 2400 RPM",
@@ -114,7 +114,7 @@ const ProductsData = {
       },
       SY26U: {
         name: "SY26U",
-        Src: "/MiniEscavadeira/SY26U/1.png",
+        Src: "/miniescavadeira/SY26U/1.png",
         href: "/produtos/Mini-escavadeira/SY26U",
         Peso: "2.780 KG",
         Potencia: "19,6cv / 2400 RPM",
@@ -123,7 +123,7 @@ const ProductsData = {
       },
       SY35U: {
         name: "SY35U",
-        Src: "/MiniEscavadeira/SY35U/1.png",
+        Src: "/miniescavadeira/SY35U/1.png",
         href: "/produtos/Mini-escavadeira/SY35U",
         Peso: "3.780 KG",
         Potencia: "27,35cv / 2200 RPM",
@@ -132,7 +132,7 @@ const ProductsData = {
       },
       SY55C: {
         name: "SY55C",
-        Src: "/MiniEscavadeira/SY55C/1.png",
+        Src: "/miniescavadeira/SY55C/1.png",
         href: "/produtos/Mini-escavadeira/SY55C",
         Peso: "5.780 KG",
         Potencia: "48,3cv / 2100 RPM",
@@ -141,8 +141,8 @@ const ProductsData = {
       },
       SY75C: {
         name: "SY75C",
-        Src: "/MiniEscavadeira/SY75C/1.png",
-        href: "/produtos/Mini-escavadeira/SY75C",
+        Src: "/miniescavadeira/sy75c/1.png",
+        href: "/produtos/Mini-escavadeira/sy75c",
         Peso: "7.280 KG",
         Potencia: "58cv / 2200 RPM",
         Capacidade: "0,32 M³",

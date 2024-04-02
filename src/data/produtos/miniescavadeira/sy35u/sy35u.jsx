@@ -2,7 +2,7 @@ const SY35U = {
   categoria: "Mini Escavadeira",
   name: "SANY SY35U",
   desc: "MINI Escavadeira PARA GRANDES OBRAS\n\nA mini Escavadeira SY35U foi projetada para proporcionar eficiência e maximizar a produtividade da obra. Possui material rodante durável e de alta qualidade para uma longa vida útil da máquina e alta resistência ao desgaste. A mini Escavadeira é facilmente configurável para o trabalho de acordo com a necessidade do operador e é extremamente robusta para sua categoria.",
-  image: "/MiniEscavadeira/SY35U/1.png",
+  image: "/miniescavadeira/SY35U/1.png",
   features: {
     high1: {
       descrição: "Peso Operacional: 3780 KG",
@@ -37,7 +37,7 @@ const SY35U = {
         desc: "Construída com materiais de alta qualidade e engenharia robusta, a SY35U é uma mini Escavadeira confiável que pode lidar com as demandas mais exigentes do canteiro de obras.",
       },
     },
-    image: "/MiniEscavadeira/SY35U/2.png",
+    image: "/miniescavadeira/SY35U/2.png",
   },
   specs: {
     Dimension: {

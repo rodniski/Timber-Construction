@@ -2,7 +2,7 @@ const SY365H = {
   categoria: "Escavadeira Grande",
   name: "SANY SY365H",
   desc: "A Escavadeira de grande porte Sany SY365H tem ótimo desempenho com um consumo baixo de combustível. Máquina com peças e equipamentos de grande qualidade, garantindo uma vida útil prolongada. A Escavadeira possui sistema de desaceleração automático. A auto desaceleração ou aceleração da SY365H reduz o consumo de combustível em até 10%. Quando uma operação é interrompida por 3 segundos, aceleração do motor cai automaticamente para o nível de inatividade e mantém o estado de marcha lenta. Quando a operação for retomada, a aceleração do motor retorna para o rpm definido em 0,1 segundo.",
-  image: "/Escavadeira/SY365H/1.png",
+  image: "/escavadeira/SY365H/1.png",
   features: {
       high1: {
           descrição: "Peso Operacional: 36.000 KG",
@@ -20,7 +20,7 @@ const SY365H = {
   dev: {
       titulo: "Confiabilidade e Eficiência",
       segDesc: "A Escavadeira SY365H oferece confiança e desempenho excepcional para realizar trabalhos complexos com eficiência. Seu sistema de desaceleração automático e alta qualidade de construção garantem uma operação suave e econômica, proporcionando resultados excepcionais em diversas condições de trabalho.",
-      image: "/Escavadeira/SY365H/3.png",
+      image: "/escavadeira/SY365H/3.png",
       High: {
           High1: {
               title: "Desempenho Avançado",

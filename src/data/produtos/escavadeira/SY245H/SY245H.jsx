@@ -2,7 +2,7 @@ const SY245H = {
   categoria: "Escavadeira",
   name: "SANY SY245H",
   desc: "A Escavadeira hidráulica Sany SY245H de 25,5 toneladas foi projetada com estrutura reforçada e elevada economia de combustível. Proporciona custos de manutenção significativamente baixos. Esse modelo de Escavadeira tem ótima eficiência em obras em ambientes complexos, pesados e que exigem força da máquina. Tem a capacidade de proporcionar força e economia de combustível.",
-  image: "/Escavadeira/SY245H/2.png",
+  image: "/escavadeira/SY245H/2.png",
   features: {
       high1: {
           descrição: "Peso Operacional: 25.500 KG",
@@ -20,7 +20,7 @@ const SY245H = {
   dev: {
       titulo: "Excelência em Produtividade",
       segDesc: "A Escavadeira SY245H é a escolha ideal para obras que demandam alta produtividade e desempenho, independentemente do terreno. Com sua estrutura reforçada e eficiência energética, ela garante resultados excepcionais em ambientes complexos e pesados.",
-      image: "/Escavadeira/SY245H/3.png",
+      image: "/escavadeira/SY245H/3.png",
       High: {
           High1: {
               title: "Estrutura Reforçada",
