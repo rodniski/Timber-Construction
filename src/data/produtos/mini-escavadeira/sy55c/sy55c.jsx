@@ -1,8 +1,8 @@
 const SY55C = {
   categoria: "Mini Escavadeira",
   name: "SANY SY55C",
-  desc: "A mini escavadeira Sany SY55C possui motor potente, ideal para operações em diferentes ambientes, desde construções urbanas até locais mais complexos como pedreiras. Com um design robusto e durável, oferece eficiência e confiabilidade em todas as operações.",
-  image: "/miniEscavadeira/sy55c/1.png",
+  desc: "A mini Escavadeira Sany SY55C possui motor potente, ideal para operações em diferentes ambientes, desde construções urbanas até locais mais complexos como pedreiras. Com um design robusto e durável, oferece eficiência e confiabilidade em todas as operações.",
+  image: "/MiniEscavadeira/sy55c/1.png",
   features: {
     high1: {
       descrição: "Peso Operacional: 5780 KG",
@@ -20,7 +20,7 @@ const SY55C = {
   dev: {
     titulo: "Versátil e Confiável",
     segDesc:
-      "A mini escavadeira Sany SY55C é versátil e confiável, sendo ideal para uma variedade de operações, desde construções urbanas até trabalhos em pedreiras. Seu design robusto e motor potente garantem eficiência e baixo custo operacional.",
+      "A mini Escavadeira Sany SY55C é versátil e confiável, sendo ideal para uma variedade de operações, desde construções urbanas até trabalhos em pedreiras. Seu design robusto e motor potente garantem eficiência e baixo custo operacional.",
     High: {
       High1: {
         image: "/svgs/engine.svg",
@@ -30,7 +30,7 @@ const SY55C = {
       High2: {
         image: "/svgs/safety.svg",
         title: "Robusta e Durável",
-        desc: "Com um design robusto e materiais de alta qualidade, esta mini escavadeira é extremamente durável e confiável, garantindo um longo ciclo de vida útil e baixa necessidade de manutenção.",
+        desc: "Com um design robusto e materiais de alta qualidade, esta mini Escavadeira é extremamente durável e confiável, garantindo um longo ciclo de vida útil e baixa necessidade de manutenção.",
       },
       High3: {
         image: "/svgs/fuel.svg",
@@ -38,7 +38,7 @@ const SY55C = {
         desc: "Projetada para maximizar a eficiência operacional, a SY55C oferece alto desempenho com baixo consumo de combustível, reduzindo os custos operacionais e aumentando a rentabilidade.",
       },
     },
-    image: "/miniEscavadeira/sy55c/3.png",
+    image: "/MiniEscavadeira/sy55c/3.png",
   },
   specs: {
     Dimension: {

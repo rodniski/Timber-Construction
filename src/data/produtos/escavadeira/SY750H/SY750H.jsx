@@ -1,7 +1,7 @@
 const SY750H = {
   categoria: "Escavadeira Grande",
   name: "SANY SY750H",
-  desc: "A escavadeira Sany SY750H tem excelente desempenho em áreas de mineração. Alta eficiência, muita força de escavação e baixo consumo de combustível estão entre os destaques desta máquina poderosa. Projetada especificamente para condições de trabalhos pesados, a fim de proporcionar uma operação ainda mais suave.",
+  desc: "A Escavadeira Sany SY750H tem excelente desempenho em áreas de mineração. Alta eficiência, muita força de escavação e baixo consumo de combustível estão entre os destaques desta máquina poderosa. Projetada especificamente para condições de trabalhos pesados, a fim de proporcionar uma operação ainda mais suave.",
   image: "/Escavadeira/SY750H/1.png",
   features: {
     high1: {
@@ -20,7 +20,7 @@ const SY750H = {
   dev: {
     titulo: "Eficiência e Desempenho",
     segDesc:
-      "A escavadeira SY750H da Sany é projetada para oferecer eficiência excepcional e desempenho superior em ambientes de mineração desafiadores. Com sua potência impressionante e recursos de economia de combustível, é a escolha ideal para operações de grande escala.",
+      "A Escavadeira SY750H da Sany é projetada para oferecer eficiência excepcional e desempenho superior em ambientes de mineração desafiadores. Com sua potência impressionante e recursos de economia de combustível, é a escolha ideal para operações de grande escala.",
     image: "/Escavadeira/SY750H/2.png",
     High: {
       High1: {

@@ -1,7 +1,7 @@
 const SY215C10 = {
   categoria: "Escavadeira",
   name: "SANY SY215C-10",
-  desc: "A escavadeira Sany SY215C-10 de 22 toneladas reúne tecnologia de ponta. Assim, como a versão anterior, possui motor personalizado, componentes reforçados, alta eficiência operacional, baixo consumo de combustível, fácil manutenção e cabine confortável. Motor e sistema hidráulico desenvolvido por marcas internacionalmente conhecidas, com tecnologia exclusiva de controle auto-otimizável AOCT, que proporciona economia de combustível de 7 a 15%.",
+  desc: "A Escavadeira Sany SY215C-10 de 22 toneladas reúne tecnologia de ponta. Assim, como a versão anterior, possui motor personalizado, componentes reforçados, alta eficiência operacional, baixo consumo de combustível, fácil manutenção e cabine confortável. Motor e sistema hidráulico desenvolvido por marcas internacionalmente conhecidas, com tecnologia exclusiva de controle auto-otimizável AOCT, que proporciona economia de combustível de 7 a 15%.",
   image: "/Escavadeira/SY215C10/2.png",
   features: {
       high1: {
@@ -19,7 +19,7 @@ const SY215C10 = {
   },
   dev: {
       titulo: "Tecnologia de Ponta",
-      segDesc: " A primeira escavadeira do mundo com design inspirado na indústria automotiva. Tem aparência mais robusta, interior confortável e estrutura reforçada. O resultado de toda estas novidades se traduz em uma operação mais eficiente e econômica, ou seja, mais retorno para seu investimento.",
+      segDesc: " A primeira Escavadeira do mundo com design inspirado na indústria automotiva. Tem aparência mais robusta, interior confortável e estrutura reforçada. O resultado de toda estas novidades se traduz em uma operação mais eficiente e econômica, ou seja, mais retorno para seu investimento.",
       image: "/Escavadeira/SY215C10/3.png",
       High: {
           High1: {

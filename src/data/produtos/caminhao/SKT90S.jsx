@@ -2,7 +2,7 @@ const SKT90S = {
   categoria: "Caminhão para Mineração",
   name: "SANY SKT90S",
   desc: "O Caminhão Fora de Estrada SANY SKT90S é uma máquina robusta e confiável, projetada para enfrentar os desafios mais exigentes em operações de mineração. Com sua capacidade impressionante de carga e construção resistente, o SKT90S oferece desempenho excepcional em ambientes adversos, garantindo eficiência e produtividade em cada ciclo de trabalho.",
-  image: "/caminhao/1.jpg",
+  image: "/Caminhao/1.jpg",
   features: {
     high1: {
       descrição: "Peso: 32 T",
@@ -38,7 +38,7 @@ const SKT90S = {
         desc: "Com sua capacidade de carga e eficiência operacional, o SKT90S maximiza a produtividade e minimiza o tempo de inatividade, tornando-se um investimento valioso para operações de mineração.",
       },
     },
-    image: "/caminhao/2.jpg",
+    image: "/Caminhao/2.jpg",
   },
   specs: {
     specifics: {

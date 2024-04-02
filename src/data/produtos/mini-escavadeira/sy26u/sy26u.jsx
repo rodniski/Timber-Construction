@@ -1,8 +1,8 @@
 const SY26U = {
   categoria: "Mini Escavadeira",
   name: "SANY SY26U",
-  desc: "A mini escavadeira SANY SY26U é perfeita para espaços estreitos, oferecendo resistência, alta capacidade e desempenho excepcional. Projetada para trabalhar em áreas confinadas e complicadas, é ideal para projetos de terraplenagem e construção de estradas.",
-  image: "/miniEscavadeira/sy26u/2.png",
+  desc: "A mini Escavadeira SANY SY26U é perfeita para espaços estreitos, oferecendo resistência, alta capacidade e desempenho excepcional. Projetada para trabalhar em áreas confinadas e complicadas, é ideal para projetos de terraplenagem e construção de estradas.",
+  image: "/MiniEscavadeira/sy26u/2.png",
   features: {
     high1: {
       descrição: "Peso Operacional: 2780 KG",
@@ -20,7 +20,7 @@ const SY26U = {
   dev: {
     titulo: "Versatilidade e Resistência",
     segDesc:
-      "A mini escavadeira SY26U oferece versatilidade e resistência, sendo capaz de operar em espaços estreitos e complicados. Seu design robusto e capacidade de alta performance a tornam ideal para uma variedade de projetos de construção.",
+      "A mini Escavadeira SY26U oferece versatilidade e resistência, sendo capaz de operar em espaços estreitos e complicados. Seu design robusto e capacidade de alta performance a tornam ideal para uma variedade de projetos de construção.",
     High: {
       High1: {
         image: "/svgs/roller.svg",
@@ -30,7 +30,7 @@ const SY26U = {
       High2: {
         image: "/svgs/truck-speed.svg",
         title: "Desempenho Excepcional",
-        desc: "Equipada com um motor potente, esta escavadeira oferece alto desempenho e eficiência energética, garantindo produtividade e economia de combustível.",
+        desc: "Equipada com um motor potente, esta Escavadeira oferece alto desempenho e eficiência energética, garantindo produtividade e economia de combustível.",
       },
       High3: {
         image: "/svgs/safety.svg",
@@ -38,7 +38,7 @@ const SY26U = {
         desc: "A cabine totalmente fechada e confortável oferece ao operador um ambiente ergonômico durante as operações, garantindo conforto e segurança.",
       },
     },
-    image: "/miniEscavadeira/sy26u/3.png",
+    image: "/MiniEscavadeira/sy26u/3.png",
   },
   specs: {
     Dimension: {

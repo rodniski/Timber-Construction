@@ -1,8 +1,8 @@
 const SY75C = {
   categoria: "Mini Escavadeira",
   name: "SANY SY75C",
-  desc: "A mini escavadeira SANY SY75C é projetada para oferecer alta potência, deslocamento rápido e eficiência de combustível. Com um motor de quatro cilindros e capacidade para lidar com trabalhos exigentes, é a escolha ideal para uma variedade de aplicações, desde construções urbanas até trabalhos em áreas rurais.",
-  image: "/miniEscavadeira/sy75c/1.png",
+  desc: "A mini Escavadeira SANY SY75C é projetada para oferecer alta potência, deslocamento rápido e eficiência de combustível. Com um motor de quatro cilindros e capacidade para lidar com trabalhos exigentes, é a escolha ideal para uma variedade de aplicações, desde construções urbanas até trabalhos em áreas rurais.",
+  image: "/MiniEscavadeira/sy75c/1.png",
   features: {
     high1: {
       descrição: "Peso Operacional: 7280 KG",
@@ -20,7 +20,7 @@ const SY75C = {
   dev: {
     titulo: "Versatilidade e Desempenho",
     segDesc:
-      "A mini escavadeira SANY SY75C combina versatilidade e desempenho para enfrentar uma variedade de desafios de trabalho. Com um motor potente, deslocamento rápido e eficiência de combustível, esta máquina é capaz de lidar com os trabalhos mais exigentes com facilidade e confiabilidade.",
+      "A mini Escavadeira SANY SY75C combina versatilidade e desempenho para enfrentar uma variedade de desafios de trabalho. Com um motor potente, deslocamento rápido e eficiência de combustível, esta máquina é capaz de lidar com os trabalhos mais exigentes com facilidade e confiabilidade.",
     High: {
       High1: {
         image: "/svgs/engine.svg",
@@ -30,7 +30,7 @@ const SY75C = {
       High2: {
         image: "/svgs/safety.svg",
         title: "Construção Robusta",
-        desc: "Com um chassi resistente e durável, esta mini escavadeira é projetada para resistir aos rigores do uso diário em uma variedade de ambientes de trabalho, garantindo confiabilidade e durabilidade a longo prazo.",
+        desc: "Com um chassi resistente e durável, esta mini Escavadeira é projetada para resistir aos rigores do uso diário em uma variedade de ambientes de trabalho, garantindo confiabilidade e durabilidade a longo prazo.",
       },
       High3: {
         image: "/svgs/fuel.svg",
@@ -38,7 +38,7 @@ const SY75C = {
         desc: "Projetada para oferecer eficiência de combustível, a SY75C permite que você maximize o tempo de trabalho e minimize os custos operacionais, tornando-a uma escolha econômica para qualquer empreendimento.",
       },
     },
-    image: "/miniEscavadeira/sy75c/2.png",
+    image: "/MiniEscavadeira/sy75c/2.png",
   },
   specs: {
     Dimension: {

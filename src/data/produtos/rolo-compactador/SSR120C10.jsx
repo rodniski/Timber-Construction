@@ -2,7 +2,7 @@ const SSR120C10 = {
   categoria: "Rolo Compactador",
   name: "SANY SSR120C10",
   desc: "O Rolo Compactador SANY  SSR120C-10 é uma máquina robusta projetada para oferecer alto desempenho e eficiência em operações de compactação de solo e asfalto. Com um peso operacional de 12.000 kg e uma potência de motor de 125 HP, este compactador é ideal para uma variedade de aplicações, desde estradas até estacionamentos e áreas industriais.",
-  image: "/roloCompactador/product.png",
+  image: "/RoloCompactador/product.png",
   features: {
     high1: {
       descrição: "Peso Operacional - 12000 KG",
@@ -21,7 +21,7 @@ const SSR120C10 = {
     titulo: "Alto Desempenho e Eficiência",
     segDesc:
       "Uma máquina robusta projetada para oferecer alto desempenho e eficiência em operações de compactação de solo e asfalto. Com um peso operacional de 12.000 kg e uma potência de motor de 125 HP, este compactador é ideal para uma variedade de aplicações, desde estradas até estacionamentos e áreas industriais.",
-    image: "/roloCompactador/highlight.png",
+    image: "/RoloCompactador/highlight.png",
     High: {
       High1: {
         image: "/svgs/gear.svg",

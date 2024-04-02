@@ -41,7 +41,7 @@ const AboutPage = () => {
               Oferecemos equipamentos de alta qualidade, reconhecidos por sua
               durabilidade e confiabilidade. Nossas máquinas são conhecidas pela
               tecnologia avançada, capacidade e custo-benefício. Atendemos às
-              necessidades de empresas em todo o mundo, desde escavadeiras até
+              necessidades de empresas em todo o mundo, desde Escavadeiras até
               guindastes e equipamentos portuários.{" "}
             </p>
             {/* BIOGRAPHY QUOTE */}

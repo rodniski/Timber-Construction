@@ -20,44 +20,44 @@ const produtos = [
   {
     name: "Mini Escavadeira",
     description: "Versatilidade e eficiência em espaços restritos.",
-    href: "/produtos/mini-escavadeira",
+    href: "/produtos/Mini-escavadeira",
     icon: BuildingStorefrontIcon,
   },
   {
     name: "Escavadeira",
     description: "Potência para a sua obra.",
-    href: "/produtos/escavadeira",
+    href: "/produtos/Escavadeira",
     icon: BuildingOffice2Icon,
   },
   {
     name: "Retroescavadeira",
     description: "Versátil para projetos diversos.",
-    href: "/produtos/retroescavadeira",
+    href: "/produtos/retroEscavadeira",
     icon: TbBackhoe,
   },
   {
     name: "Pá Carregadeira",
     description: "Eficácia em cada movimento.",
-    href: "/produtos/pa-carregadeira",
+    href: "/produtos/Pa-carregadeira",
     icon: FaMountainCity,
   },
   {
     name: "Motoniveladora",
     description: "Domine o terreno com precisão e potência",
-    href: "/produtos/motoniveladora",
+    href: "/produtos/Motoniveladora",
     icon: MdEditRoad,
   },
   {
     name: "Rolo Compactador",
     description: "Para uma construção sólida e duradoura",
-    href: "/produtos/rolo-compactador",
+    href: "/produtos/Rolo-compactador",
     icon: GiHorizonRoad,
   },
 ];
 produtos.sort((a, b) => a.name.localeCompare(b.name));
 
 const callsToAction = [
-  { name: "Mineração", href: "/produtos/caminhao", icon: GiMiningHelmet },
+  { name: "Mineração", href: "/produtos/Caminhao", icon: GiMiningHelmet },
   { name: "Categorias", href: "/produtos", icon: BiSolidCategoryAlt },
 ];
 const itemVariants = {

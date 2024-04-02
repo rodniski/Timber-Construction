@@ -2,7 +2,7 @@ const BHL75 = {
   categoria: "Retroescavadeira",
   name: "SANY BHL75",
   desc: "Com sua capacidade multifuncional, a BHL75 torna-se uma escolha excepcional para uma ampla gama de tarefas, desde escavação e carga até manuseio de materiais. Sua facilidade de operação e manobrabilidade a tornam ideal para empreiteiros que buscam produtividade e flexibilidade em seus projetos.",
-  image: "/retroescavadeira/1.png",
+  image: "/retroEscavadeira/1.png",
   features: {
     high1: {
       descrição: "Peso Operacional: 7.650 KG",
@@ -20,7 +20,7 @@ const BHL75 = {
   dev: {
     titulo: "Alto Desempenho e Eficiência",
     segDesc:
-      "Ágil e simples de operar, a retroescavadeira SANY BHL75 é uma máquina manipuladora de materiais e porta-ferramentas otimizada para diversas aplicações. Ele permite aos empreiteiros a vantagem do desempenho multifuncional e oferece aos operadores maior versatilidade e capacidade de manobra, além da capacidade de se deslocarem de um local para outro sem reboque. A BHL75 conta com transmissão Powershift 4WD com diferencial de deslizamento limitado e proteção do eixo de transmissão, controle de direção, joystick FNR e interruptor de embreagem kick down.",
+      "Ágil e simples de operar, a retroEscavadeira SANY BHL75 é uma máquina manipuladora de materiais e porta-ferramentas otimizada para diversas aplicações. Ele permite aos empreiteiros a vantagem do desempenho multifuncional e oferece aos operadores maior versatilidade e capacidade de manobra, além da capacidade de se deslocarem de um local para outro sem reboque. A BHL75 conta com transmissão Powershift 4WD com diferencial de deslizamento limitado e proteção do eixo de transmissão, controle de direção, joystick FNR e interruptor de embreagem kick down.",
     High: {
       High1: {
         image: "/svgs/gear.svg",
@@ -66,7 +66,7 @@ const BHL75 = {
       data: {
         "Peso operacional": "7.650 Kg",
         "Capacidade da caçamba (carregadeira)": "1,0m³",
-        "Capacidade da caçamba (escavadeira)": "0,26m³",
+        "Capacidade da caçamba (Escavadeira)": "0,26m³",
         "Torque máximo": "99 hp",
         "Modelo do motor": "Cummins QSF3.8",
         "Potência nominal Nm/rpm": "420/1.600",
