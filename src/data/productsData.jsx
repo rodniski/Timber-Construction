@@ -99,14 +99,14 @@ const ProductsData = {
     },
   },
   "Mini Escavadeira": {
-    image: "/MiniEscavadeira/sy16c/2.png",
+    image: "/MiniEscavadeira/SY16C/2.png",
     description: "Versatilidade e eficiência em espaços restritos.",
     href: "/produtos/Mini-escavadeira",
     products: {
       SY16C: {
         name: "SY16C",
-        Src: "/MiniEscavadeira/sy16c/1.png",
-        href: "/produtos/Mini-escavadeira/sy16c",
+        Src: "/MiniEscavadeira/SY16C/1.png",
+        href: "/produtos/Mini-escavadeira/SY16C",
         Peso: "1.820 KG",
         Potencia: "15cv / 2400 RPM",
         Capacidade: "0,04 M³",
@@ -114,8 +114,8 @@ const ProductsData = {
       },
       SY26U: {
         name: "SY26U",
-        Src: "/MiniEscavadeira/sy26u/1.png",
-        href: "/produtos/Mini-escavadeira/sy26u",
+        Src: "/MiniEscavadeira/SY26U/1.png",
+        href: "/produtos/Mini-escavadeira/SY26U",
         Peso: "2.780 KG",
         Potencia: "19,6cv / 2400 RPM",
         Capacidade: "0,06 M³",
@@ -123,8 +123,8 @@ const ProductsData = {
       },
       SY35U: {
         name: "SY35U",
-        Src: "/MiniEscavadeira/sy35u/1.png",
-        href: "/produtos/Mini-escavadeira/sy35u",
+        Src: "/MiniEscavadeira/SY35U/1.png",
+        href: "/produtos/Mini-escavadeira/SY35U",
         Peso: "3.780 KG",
         Potencia: "27,35cv / 2200 RPM",
         Capacidade: "0,12 M³",
@@ -132,8 +132,8 @@ const ProductsData = {
       },
       SY55C: {
         name: "SY55C",
-        Src: "/MiniEscavadeira/sy55c/1.png",
-        href: "/produtos/Mini-escavadeira/sy55c",
+        Src: "/MiniEscavadeira/SY55C/1.png",
+        href: "/produtos/Mini-escavadeira/SY55C",
         Peso: "5.780 KG",
         Potencia: "48,3cv / 2100 RPM",
         Capacidade: "0,21 M³",
@@ -141,8 +141,8 @@ const ProductsData = {
       },
       SY75C: {
         name: "SY75C",
-        Src: "/MiniEscavadeira/sy75c/1.png",
-        href: "/produtos/Mini-escavadeira/sy75c",
+        Src: "/MiniEscavadeira/SY75C/1.png",
+        href: "/produtos/Mini-escavadeira/SY75C",
         Peso: "7.280 KG",
         Potencia: "58cv / 2200 RPM",
         Capacidade: "0,32 M³",

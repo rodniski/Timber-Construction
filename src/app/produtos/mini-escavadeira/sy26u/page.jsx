@@ -1,9 +1,9 @@
 import React from "react";
 import Product from "@components/Produtos/Product"; // Importando o componente ProductPage
-import sy26u from "@/data/produtos/Mini-escavadeira/sy26u/sy26u"; // Importando as informações específicas do produto SY135C
+import SY26U from "@/data/produtos/Mini-escavadeira/SY26U/SY26U"; // Importando as informações específicas do produto SY135C
 function ProductPage() {
   return (
-    <Product product={sy26u} />
+    <Product product={SY26U} />
   );
 }
 export default ProductPage;
