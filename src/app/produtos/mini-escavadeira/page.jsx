@@ -1,16 +1,9 @@
 import React from "react";
-import Categorias from "@/components/Categorias";
-import productsData from "@/data/productsData";
-
-export default function miniEscavadeiraPage() {
-  // Acessando os produtos da Retro Escavadeira
-  const category = "Mini Escavadeira";
-  const miniEscavadeiraCategoryData = productsData[category];
-  const miniEscavadeiraProducts = miniEscavadeiraCategoryData.products;
+import Product from "@components/Produtos/Product"; // Importando o componente ProductPage
+import sy75c from "@/data/produtos/mini-escavadeira/sy75c/sy75c"; // Importando as informações específicas do produto SY135C
+function ProductPage() {
   return (
-    <Categorias
-      category={category}
-      products={miniEscavadeiraProducts}
-    />
+    <Product product={sy75c} />
   );
 }
+export default ProductPage;

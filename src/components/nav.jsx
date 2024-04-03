@@ -77,7 +77,7 @@ export default function Nav() {
         <div className="flex md:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Timber | Sany</span>
-            <image className="h-10 md:h-16 lg:h-20 w-auto" src="/logo.png" alt="" />
+            <img className="h-10 md:h-16 lg:h-20 w-auto" src="/logo.png" alt="" />
           </a>
         </div>
         <div className="flex md:hidden">
@@ -203,7 +203,7 @@ export default function Nav() {
           <div className="flex items-center px-6 justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Timber | Sany</span>
-              <image className="h-14 w-auto" src="/logo.png" alt="" />
+              <img className="h-14 w-auto" src="/logo.png" alt="" />
             </a>
             <button
               type="button"

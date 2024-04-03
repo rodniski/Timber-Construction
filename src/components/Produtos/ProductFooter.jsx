@@ -1,29 +1,21 @@
 "use client";
-import ContactForm from "../ContactForm"; // Importe o componente ContactForm aqui
-import React, { useState } from "react"; // Importe useState do pacote react
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer"; // Importe useInView
+import React, { useState } from "react";
+import ContactForm from "./ContactForm"; // Importe o componente ContactForm aqui
 
 const ProductFooter = ({ specs }) => {
   const [activeTab, setActiveTab] = useState("Motor");
-  const [ref, inView] = useInView(); // Use o hook useInView para detectar a visibilidade do componente
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
   };
 
   return (
-    <div ref={ref} className="bg-slate-100 h-screen py-16">
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={inView ? { opacity: 1, y: 0 } : {}}
-        transition={{ delay: 0.2 }}
-        className="container mx-auto px-4"
-      >
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+    <div className="bg-slate-100 h-screen py-16">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="md:col-span-1">
             <div className="mb-8">
-              <h2 className="text-2xl font-bold text-red-600 mb-4">
+              <h2 className="text-2xl font-bold text-indigo-600 mb-4">
                 Ficha Técnica
               </h2>
               <div className="flex space-x-4">
@@ -37,7 +29,7 @@ const ProductFooter = ({ specs }) => {
                     }`}
                     onClick={() => handleTabClick(section)}
                   >
-                    <image
+                    <img
                       src={specs[section].image}
                       alt={section}
                       className={`w-6 h-6 mr-2 ${
@@ -64,14 +56,14 @@ const ProductFooter = ({ specs }) => {
             </div>
           </div>
           <div className="md:col-span-1">
-            <h2 className="text-2xl font-bold text-red-600 mb-4">
+            <h2 className="text-2xl font-bold text-indigo-600 mb-4">
               Entre em Contato
             </h2>
             {/* Inclua o formulário de contato aqui */}
             <ContactForm />
           </div>
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 };
