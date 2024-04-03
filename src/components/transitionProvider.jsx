@@ -1,5 +1,5 @@
 "use client";
-
+import { Analytics } from "@vercel/analytics/react";
 import { AnimatePresence } from "framer-motion";
 import Nav from "./nav";
 import { motion } from "framer-motion";
@@ -42,6 +42,7 @@ const TransitionProvider = ({ children }) => {
       <div className="h-auto w-full top-0 absolute">
         <Nav />
       </div>
+      <Analytics />
     </AnimatePresence>
   );
 };
