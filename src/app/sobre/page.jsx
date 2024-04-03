@@ -51,7 +51,7 @@ const AboutPage = () => {
             </span>
             {/* BIOGRAPHY SIGN SVG*/}
             <div className="self-end">
-              <img className="w-24" src="/sany.png" alt="" />
+              <image className="w-24" src="/sany.png" alt="" />
             </div>
             {/* BIOGRAPHY SCROLL SVG */}
             <motion.svg

@@ -39,7 +39,7 @@ const Categorias = ({ category, products }) => {
                 }}
               >
                 <div className="relative" style={{ paddingBottom: "100%" }}>
-                  <img
+                  <image
                     src={product.Src}
                     alt={productName}
                     className="absolute inset-0 w-full h-full object-cover object-center"
