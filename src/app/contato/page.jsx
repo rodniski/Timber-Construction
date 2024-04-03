@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
-import ContactForm from "../../Components/Contactform"; // Importe o Componente ContactForm aqui
+import { useRef, useState } from "react";
+import ContactForm from "@components/ContactForm"; // Importe o componente ContactForm aqui
 
 const ContactPage = () => {
   const text = "Diga Olá";

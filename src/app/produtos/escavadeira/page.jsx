@@ -1,16 +1,16 @@
 import React from "react";
-import Categorias from "@/Components/categorias";
+import Categorias from "@/components/Categorias";
 import productsData from "@/data/productsData";
 
-export default function EscavadeiraPage() {
+export default function escavadeiraPage() {
   // Acessando os produtos da Retro Escavadeira
   const category = "Escavadeira";
-  const EscavadeiraCategoryData = productsData[category];
-  const EscavadeiraProducts = EscavadeiraCategoryData.products;
+  const escavadeiraCategoryData = productsData[category];
+  const escavadeiraProducts = escavadeiraCategoryData.products;
   return (
     <Categorias
       category={category}
-      products={EscavadeiraProducts}
+      products={escavadeiraProducts}
     />
   );
 }

@@ -1,8 +1,8 @@
 const SY980H = {
   categoria: "Escavadeira Grande",
   name: "SANY SY980H",
-  desc: "A Escavadeira hidráulica Sany SY980H, projetada especificamente para condições de trabalhos pesados, tem excelente desempenho em áreas de mineração. A força de escavação e o baixo consumo de combustível estão entre os destaques desta máquina poderosa. A Escavadeira é equipada com o sistema de gerenciamento Four-in-one desenvolvido pela SANY, possui design inteligente que facilita a manutenção e a substituição de peças, tornando o trabalho em condições difíceis mais simples.",
-  image: "/escavadeira/sy980h/1.png",
+  desc: "A escavadeira hidráulica Sany SY980H, projetada especificamente para condições de trabalhos pesados, tem excelente desempenho em áreas de mineração. A força de escavação e o baixo consumo de combustível estão entre os destaques desta máquina poderosa. A escavadeira é equipada com o sistema de gerenciamento Four-in-one desenvolvido pela SANY, possui design inteligente que facilita a manutenção e a substituição de peças, tornando o trabalho em condições difíceis mais simples.",
+  image: "/Escavadeira/SY980H/1.png",
   features: {
     high1: {
       descrição: "Peso Operacional: 95800 KG",
@@ -20,12 +20,12 @@ const SY980H = {
   dev: {
     titulo: "Poder e Eficiência",
     "seg.Desc":
-      "A Escavadeira Sany SY980H oferece uma combinação excepcional de potência e eficiência. Com seu design robusto e avançado sistema de gerenciamento, esta máquina é a escolha ideal para trabalhos de grande porte.",
-    image: "/escavadeira/sy980h/2.png",
+      "A escavadeira Sany SY980H oferece uma combinação excepcional de potência e eficiência. Com seu design robusto e avançado sistema de gerenciamento, esta máquina é a escolha ideal para trabalhos de grande porte.",
+    image: "/Escavadeira/SY980H/2.png",
     High: {
       High1: {
         title: "Sistema de Gerenciamento Four-in-one",
-        desc: "O sistema Four-in-one da SANY otimiza o desempenho da Escavadeira, garantindo eficiência máxima em todas as operações. Com funcionalidades avançadas, como controle de temperatura e diagnósticos em tempo real, você pode confiar na SY980H para enfrentar os desafios mais exigentes.",
+        desc: "O sistema Four-in-one da SANY otimiza o desempenho da escavadeira, garantindo eficiência máxima em todas as operações. Com funcionalidades avançadas, como controle de temperatura e diagnósticos em tempo real, você pode confiar na SY980H para enfrentar os desafios mais exigentes.",
         image: "/svgs/swiss.svg",
       },
       High2: {
@@ -95,7 +95,7 @@ const SY980H = {
         "Velocidade de Giro": "7 rpm",
         "Pressão sobre o Solo": "132 kPa",
         "Força de Escavação da Caçamba": "495 kN",
-        "Força de Escavação do Braço": "345 kN ",
+        "Força de Escavação do Braço": "345 kN",
       },
     },
   },

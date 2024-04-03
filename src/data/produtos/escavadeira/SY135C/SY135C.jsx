@@ -20,7 +20,7 @@ const SY135C = {
   dev: {
     titulo: "Desempenho e Versatilidade",
     segDesc:
-      "A Escavadeira SY135C é projetada para oferecer desempenho superior e versatilidade em uma variedade de aplicações industriais.",
+      "A escavadeira SY135C é projetada para oferecer desempenho superior e versatilidade em uma variedade de aplicações industriais.",
     image: "/escavadeira/sy135c/4.png",
     High: {
       High1: {

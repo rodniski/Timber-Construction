@@ -1,5 +1,5 @@
 "use client";
-import Brain from "@/Components/resources/brain";
+import Brain from "@/components/Resources/brain";
 import { motion, useInView, useScroll } from "framer-motion";
 import { useRef } from "react";
 
@@ -41,7 +41,7 @@ const AboutPage = () => {
               Oferecemos equipamentos de alta qualidade, reconhecidos por sua
               durabilidade e confiabilidade. Nossas máquinas são conhecidas pela
               tecnologia avançada, capacidade e custo-benefício. Atendemos às
-              necessidades de empresas em todo o mundo, desde Escavadeiras até
+              necessidades de empresas em todo o mundo, desde escavadeiras até
               guindastes e equipamentos portuários.{" "}
             </p>
             {/* BIOGRAPHY QUOTE */}
@@ -51,7 +51,7 @@ const AboutPage = () => {
             </span>
             {/* BIOGRAPHY SIGN SVG*/}
             <div className="self-end">
-              <image className="w-24" src="/sany.png" alt="" />
+              <img className="w-24" src="/sany.png" alt="" />
             </div>
             {/* BIOGRAPHY SCROLL SVG */}
             <motion.svg

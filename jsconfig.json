@@ -2,7 +2,7 @@
   "compilerOptions": {
     "paths": {
       "@/*": ["./src/*"],
-      "@Components/*": ["/src/Components/*"]
+      "@components/*": ["/src/components/*"]
     }
   }
 }

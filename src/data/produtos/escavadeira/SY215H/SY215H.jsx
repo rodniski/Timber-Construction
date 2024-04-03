@@ -1,8 +1,8 @@
 const SY215H = {
   categoria: "Escavadeira",
   name: "SANY SY215H",
-  desc: "A Escavadeira SY215H de 21.9 toneladas possui motor personalizado, Componentes reforçados, alta eficiência operacional, baixo consumo de combustível, fácil manutenção e cabine confortável.",
-  image: "/escavadeira/sy215h/1.png",
+  desc: "A escavadeira SY215H de 21.9 toneladas possui motor personalizado, componentes reforçados, alta eficiência operacional, baixo consumo de combustível, fácil manutenção e cabine confortável.",
+  image: "/Escavadeira/SY215H/1.png",
   features: {
       high1: {
           descrição: "Peso Operacional: 21.900 KG",
@@ -19,8 +19,8 @@ const SY215H = {
   },
   dev: {
       titulo: "Eficiência e Conforto",
-      segDesc: "A Escavadeira SY215H combina eficiência excepcional com o máximo conforto para o operador, proporcionando um ambiente de trabalho produtivo e agradável.",
-      image: "/escavadeira/sy215h/2.png",
+      segDesc: "A escavadeira SY215H combina eficiência excepcional com o máximo conforto para o operador, proporcionando um ambiente de trabalho produtivo e agradável.",
+      image: "/Escavadeira/SY215H/2.png",
       High: {
           High1: {
               title: "Desempenho Superior",

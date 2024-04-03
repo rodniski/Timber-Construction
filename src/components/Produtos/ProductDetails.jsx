@@ -1,11 +1,11 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer"; // Importe useInView
 
 function ProductDetails({ product }) {
   const { dev, name } = product;
-  const [ref, inView] = useInView(); // Use o hook useInView para detectar a visibilidade do Componente
+  const [ref, inView] = useInView(); // Use o hook useInView para detectar a visibilidade do componente
 
   const itemVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -32,7 +32,7 @@ function ProductDetails({ product }) {
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ delay: 0.2 }}
       >
-        <image
+        <img
           src={dev.image}
           alt={`Imagem destacada do ${name}`}
           className="-ml-96 w-[1750px] hidden lg:block object-cover min-h-auto max-h-screen rounded-2xl"
@@ -69,7 +69,7 @@ function ProductDetails({ product }) {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.2 }}
           >
-            <image
+            <img
               src={dev.image}
               alt={`Imagem destacada do ${name}`}
               className="block lg:hidden mt-6 justify-center object-cover min-h-auto max-h-96 w-full rounded-2xl"
@@ -81,7 +81,7 @@ function ProductDetails({ product }) {
         <motion.div variants={itemVariants}>
           {/* Acessando os highlights diretamente pelo objeto dev.High */}
           <div className="flex items-center mb-4">
-            <image
+            <img
               src={dev.High.High1.image}
               alt="Highlight icon"
               className="mr-2"
@@ -94,7 +94,7 @@ function ProductDetails({ product }) {
             </div>
           </div>
           <div className="flex items-center mb-4">
-            <image
+            <img
               src={dev.High.High2.image}
               alt="Highlight icon"
               className=" mr-2"
@@ -107,7 +107,7 @@ function ProductDetails({ product }) {
             </div>
           </div>
           <div className="flex items-center mb-4">
-            <image
+            <img
               src={dev.High.High3.image}
               alt="Highlight icon"
               className=" mr-2"

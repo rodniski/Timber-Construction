@@ -1,8 +1,8 @@
 const SY500H = {
   categoria: "Escavadeira Grande",
   name: "SANY SY500H",
-  desc: "A Escavadeira Sany SY500H tem ótimo desempenho. É a mais econômica comparada a modelos de mesma categoria. Proporciona maior eficiência no trabalho, força em escavação e grande desempenho em mineração. Com motor importado Isuzu, tem potência nominal de até 300kW. Possui sistema de dissipação de calor independente. Esse sistema garante a temperatura ideal do sistema hidráulico, até mesmo sob condições de altas temperaturas e cargas pesadas.",
-  image: "/escavadeira/sy500h/1.png",
+  desc: "A escavadeira Sany SY500H tem ótimo desempenho. É a mais econômica comparada a modelos de mesma categoria. Proporciona maior eficiência no trabalho, força em escavação e grande desempenho em mineração. Com motor importado Isuzu, tem potência nominal de até 300kW. Possui sistema de dissipação de calor independente. Esse sistema garante a temperatura ideal do sistema hidráulico, até mesmo sob condições de altas temperaturas e cargas pesadas.",
+  image: "/Escavadeira/SY500H/1.png",
   features: {
       high1: {
           descrição: "Peso Operacional: 49.500 KG",
@@ -19,8 +19,8 @@ const SY500H = {
   },
   dev: {
       titulo: "Força e Eficiência na Mineração",
-      "seg.Desc": "A Escavadeira SY500H da Sany oferece uma combinação poderosa de força e eficiência, tornando-a ideal para trabalhos de mineração pesados. Com sua potência impressionante e recursos inovadores, ela proporciona um desempenho excepcional mesmo nas condições mais desafiadoras.",
-      image: "/escavadeira/sy500h/2.png",
+      "seg.Desc": "A escavadeira SY500H da Sany oferece uma combinação poderosa de força e eficiência, tornando-a ideal para trabalhos de mineração pesados. Com sua potência impressionante e recursos inovadores, ela proporciona um desempenho excepcional mesmo nas condições mais desafiadoras.",
+      image: "/Escavadeira/SY500H/2.png",
       High: {
           High1: {
               title: "Desempenho Potente",

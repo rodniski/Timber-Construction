@@ -4,9 +4,9 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import Badge from "./resources/badge";
-import Modal from "./resources/modal";
-import ContactForm from "./contactform";
+import Badge from "./Resources/Badge";
+import Modal from "./Resources/Modal";
+import ContactForm from "./ContactForm";
 
 const Categorias = ({ category, products }) => {
   const [showModal, setShowModal] = useState(false);
@@ -27,7 +27,7 @@ const Categorias = ({ category, products }) => {
         <h2 className="text-3xl font-bold text-red-700 mb-8">{category}</h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
-          {Object.keys(products).map((productName) => {
+          {Object.keys(products).map((productName, index) => {
             const product = products[productName];
             return (
               <motion.div
@@ -39,8 +39,8 @@ const Categorias = ({ category, products }) => {
                 }}
               >
                 <div className="relative" style={{ paddingBottom: "100%" }}>
-                  <image
-                    src={product.image}
+                  <img
+                    src={product.Src}
                     alt={productName}
                     className="absolute inset-0 w-full h-full object-cover object-center"
                   />
@@ -100,7 +100,7 @@ const Categorias = ({ category, products }) => {
           <Modal onClose={handleCloseModal} productName={selectedProduct.name}>
             <ContactForm
               productName={selectedProduct.name}
-              productImage={selectedProduct.image}
+              productImage={selectedProduct.Src}
             />
           </Modal>
         )}

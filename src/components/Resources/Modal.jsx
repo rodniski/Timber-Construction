@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Dialog, Transition } from "@headlessui/react";
-import ContactForm from "../contactform";
+import ContactForm from "../ContactForm";
 
 const Modal = ({ onClose, productName }) => {
   const produto = productName;
