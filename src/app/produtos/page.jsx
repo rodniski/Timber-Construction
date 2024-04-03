@@ -35,7 +35,7 @@ const CategoriesPage = () => {
                       {category}
                     </h3>
                     <div className="h-48 flex items-center justify-center mb-2">
-                      <img
+                      <image
                         src={categoryData?.image}
                         alt={category}
                         className="w-auto h-full max-w-full max-h-full"

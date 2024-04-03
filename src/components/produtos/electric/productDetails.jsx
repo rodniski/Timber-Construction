@@ -7,7 +7,7 @@ function ProductDetails({ product }) {
     <div className="flex pt-12 justify-between items-center py-4 px-6 bg-slate-100 rounded-lg">
       {/* Imagem */}
       <div className="">
-        <img
+        <image
           src={dev.image}
           alt={`Imagem destacada do ${name}`}
           className="-ml-96 w-[1750px] rounded-2xl"
@@ -26,21 +26,21 @@ function ProductDetails({ product }) {
         <div>
           {/* Acessando os highlights diretamente pelo objeto dev.High */}
           <div className="flex items-center mb-4">
-            <img src={dev.High.High1.image} alt="Highlight icon" className="mr-2" />
+            <image src={dev.High.High1.image} alt="Highlight icon" className="mr-2" />
             <div>
               <h4 className="text-black font-semibold text-lg">{dev.High.High1.title}</h4>
               <p className="text-base text-gray-700">{dev.High.High1.desc}</p>
             </div>
           </div>
           <div className="flex items-center mb-4">
-            <img src={dev.High.High2.image} alt="Highlight icon" className=" mr-2" />
+            <image src={dev.High.High2.image} alt="Highlight icon" className=" mr-2" />
             <div>
               <h4 className="text-black font-semibold text-lg">{dev.High.High2.title}</h4>
               <p className="text-base text-gray-700">{dev.High.High2.desc}</p>
             </div>
           </div>
           <div className="flex items-center mb-4">
-            <img src={dev.High.High3.image} alt="Highlight icon" className=" mr-2" />
+            <image src={dev.High.High3.image} alt="Highlight icon" className=" mr-2" />
             <div>
               <h4 className="text-black font-semibold text-lg">{dev.High.High3.title}</h4>
               <p className="text-base text-gray-700">{dev.High.High3.desc}</p>

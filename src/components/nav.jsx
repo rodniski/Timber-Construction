@@ -8,7 +8,7 @@ import {
   BuildingStorefrontIcon,
   BuildingOffice2Icon,
 } from "@heroicons/react/24/outline";
-import { ChevronDownIcon, PhoneIcon } from "@heroicons/react/20/solid";
+import { ChevronDownIcon} from "@heroicons/react/20/solid";
 import { TbBackhoe } from "react-icons/tb";
 import { MdEditRoad } from "react-icons/md";
 import { FaMountainCity } from "react-icons/fa6";
@@ -60,14 +60,6 @@ const callsToAction = [
   { name: "Mineração", href: "/produtos/caminhao", icon: GiMiningHelmet },
   { name: "Categorias", href: "/produtos", icon: BiSolidCategoryAlt },
 ];
-const itemVariants = {
-  open: {
-    opacity: 1,
-    y: 0,
-    transition: { type: "spring", stiffness: 300, damping: 24 },
-  },
-  closed: { opacity: 0, y: 20, transition: { duration: 0.2 } },
-};
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -85,7 +77,7 @@ export default function Nav() {
         <div className="flex md:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Timber | Sany</span>
-            <img className="h-14 md:h-16 lg:h-20 w-auto" src="/logo.png" alt="" />
+            <image className="h-14 md:h-16 lg:h-20 w-auto" src="/logo.png" alt="" />
           </a>
         </div>
         <div className="flex md:hidden">
@@ -211,7 +203,7 @@ export default function Nav() {
           <div className="flex items-center px-6 justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Timber | Sany</span>
-              <img className="h-14 w-auto" src="/logo.png" alt="" />
+              <image className="h-14 w-auto" src="/logo.png" alt="" />
             </a>
             <button
               type="button"

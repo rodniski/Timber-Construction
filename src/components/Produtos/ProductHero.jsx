@@ -55,7 +55,7 @@ function ProductHero({ product }) {
               transition={{ delay: 0.5 }}
               className="flex items-center mb-4"
             >
-              <img
+              <image
                 src="/svgs/check.svg"
                 alt="Check icon"
                 className="w-6 xl:w-[30px] mr-2 text-black"
@@ -106,7 +106,7 @@ function ProductHero({ product }) {
                 transition={{ delay: 0.6 + staggerDelay * index }}
                 className="flex items-center mb-4"
               >
-                <img
+                <image
                   src={highlight.image}
                   alt="Highlight icon"
                   className="mr-2"

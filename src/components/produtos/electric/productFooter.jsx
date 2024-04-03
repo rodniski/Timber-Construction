@@ -29,7 +29,7 @@ const ProductFooter = ({ specs }) => {
                     }`}
                     onClick={() => handleTabClick(section)}
                   >
-                    <img
+                    <image
                       src={specs[section].image}
                       alt={section}
                       className={`w-6 h-6 mr-2 ${
