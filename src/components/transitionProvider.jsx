@@ -1,5 +1,6 @@
 "use client";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { AnimatePresence } from "framer-motion";
 import Nav from "./nav";
 import { motion } from "framer-motion";
@@ -43,6 +44,7 @@ const TransitionProvider = ({ children }) => {
         <Nav />
       </div>
       <Analytics />
+      <SpeedInsights />
     </AnimatePresence>
   );
 };
