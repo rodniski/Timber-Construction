@@ -27,7 +27,7 @@ const Categorias = ({ category, products }) => {
         <h2 className="text-3xl font-bold text-red-700 mb-8">{category}</h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
-          {Object.keys(products).map((productName, index) => {
+          {Object.keys(products).map((productName) => {
             const product = products[productName];
             return (
               <motion.div

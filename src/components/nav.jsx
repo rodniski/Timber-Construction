@@ -8,7 +8,7 @@ import {
   BuildingStorefrontIcon,
   BuildingOffice2Icon,
 } from "@heroicons/react/24/outline";
-import { ChevronDownIcon, PhoneIcon } from "@heroicons/react/20/solid";
+import { ChevronDownIcon} from "@heroicons/react/20/solid";
 import { TbBackhoe } from "react-icons/tb";
 import { MdEditRoad } from "react-icons/md";
 import { FaMountainCity } from "react-icons/fa6";
