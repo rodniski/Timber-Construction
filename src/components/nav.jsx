@@ -1,5 +1,5 @@
 "use client"; // Sessão de importações:
-import { Fragment, useState } from "react";
+import React, { Fragment, useState } from "react";
 import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
 import { motion } from "framer-motion"; // Importe motion
 import {
@@ -69,7 +69,7 @@ export default function Nav() {
   const [hovering, setHovering] = useState(false);
 
   return (
-    <header className="p-2 backdrop-blur-xl bg-slate-600 bg-opacity-50 shadow-lg">
+    <header className="p-4 md:p-2 backdrop-blur-xl bg-slate-600 bg-opacity-50 shadow-lg">
       <nav
         className="flex w-full bg-transparent justify-between items-center md:px-8"
         aria-label="Global"
@@ -77,7 +77,11 @@ export default function Nav() {
         <div className="flex md:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Timber | Sany</span>
-            <img className="h-10 md:h-16 lg:h-20 w-auto" src="/logo.png" alt="" />
+            <img
+              className="h-14  md:h-16 lg:h-20 w-auto"
+              src="/logo.png"
+              alt=""
+            />
           </a>
         </div>
         <div className="flex md:hidden">
@@ -187,108 +191,139 @@ export default function Nav() {
           </a>
         </div>
       </nav>
-
-      {/* Menu Mobile */}
       <Dialog
         as="div"
         className="md:hidden"
         open={mobileMenuOpen}
-        onClose={setMobileMenuOpen}
+        onClose={() => setMobileMenuOpen(false)}
       >
-        <div className="fixed inset-0 z-10" />
-
-        {/* Conteúdo do menu Mobile */}
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white py-6 sm:max-w-sm  ">
-          {/* LOGO */}
-          <div className="flex items-center px-6 justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Timber | Sany</span>
-              <img className="h-14 w-auto" src="/logo.png" alt="" />
-            </a>
-            <button
-              type="button"
-              className="-m-2.5 rounded-md p-2.5 text-gray-700"
-              onClick={() => setMobileMenuOpen(false)}
+        <Dialog.Panel className="fixed inset-0 z-50 flex justify-end">
+          <Transition
+            show={mobileMenuOpen}
+            enter="transition-opacity duration-200"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
+            leave="transition-opacity duration-200"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
+          >
+            <Dialog.Panel
+              as={motion.div}
+              initial={{ x: "100%" }}
+              animate={{ x: mobileMenuOpen ? 0 : "100%" }}
+              transition={{ type: "spring", stiffness: 200, damping: 20 }}
+              className="fixed inset-y-0 right-0 z-50 w-full max-w-md bg-slate-200"
             >
-              <span className="sr-only">Close menu</span>
-              <XMarkIcon className="h-6 w-6" aria-hidden="true" />
-            </button>
-          </div>
+              {/* Conteúdo do menu Mobile */}
+              <div className="p-6">
+                {/* LOGO */}
+                <div className="flex items-center justify-between">
+                  <a href="#" className="-m-1.5 p-1.5">
+                    <span className="sr-only">Timber | Sany</span>
+                    <img className="h-14 w-auto" src="/logo.png" alt="" />
+                  </a>
+                  <button
+                    type="button"
+                    className="-m-2.5 rounded-md p-2.5 text-gray-700"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    <span className="sr-only">Close menu</span>
+                    <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+                  </button>
+                </div>
 
-          {/* MENU CONTENT*/}
-          <div className="mt-6 flow-root ">
-            <div className="-my-6 divide-y divide-gray-500/10 ">
-              <div className="space-y-2 py-6 px-6">
-                {/* Produtos */}
-                <Disclosure as="div" className="-mx-3">
-                  {({ open }) => (
-                    <>
-                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                        Produtos
-                        <ChevronDownIcon
-                          className={classNames(
-                            open ? "rotate-180" : "",
-                            "h-5 w-5 flex-none"
+                {/* MENU CONTENT */}
+                <div className=" ">
+                  <div className="">
+                    <div className="">
+                      <div className="py-6 px-2 ">
+                        {/* Produtos */}
+                        <Disclosure as="div" className="w-full rounded-lg my-6 text-xl font-semibold text-slate-800">
+                          {({ open }) => (
+                            <>
+                              <Disclosure.Button className="flex w-full items-center justify-between rounded-lg  pr-3.5 text-xl font-semibold text-gray-900">
+                                Produtos
+                                <ChevronDownIcon
+                                  className={classNames(
+                                    open ? "rotate-180" : "",
+                                    "h-8 w-8 flex-none"
+                                  )}
+                                  aria-hidden="true"
+                                />
+                              </Disclosure.Button>
+                              <Disclosure.Panel className="mt-2  space-y-2">
+                                {produtos.map((item) => (
+                                  <Disclosure.Button
+                                    key={item.name}
+                                    as="a"
+                                    href={item.href}
+                                    className="block rounded-xl py-2 bg-white pl-6 pr-3 font-semibold text-gray-900 flex gap-2 items-center"
+                                  >
+                                    <item.icon
+                                      className="h-8 w-8 flex-none text-red-600"
+                                      aria-hidden="true"
+                                    />
+                                    <span>{item.name}</span>
+                                  </Disclosure.Button>
+                                ))}
+                              </Disclosure.Panel>
+                            </>
                           )}
-                          aria-hidden="true"
-                        />
-                      </Disclosure.Button>
-                      <Disclosure.Panel className="mt-2 space-y-2">
-                        {produtos.map((item) => (
-                          <Disclosure.Button
+                        </Disclosure>
+
+                        {/* Sobre */}
+                        <div className="w-full rounded-lg my-6 text-xl font-semibold text-slate-800">
+                          <a href="/sobre" className="">
+                            Sobre
+                          </a>
+                        </div>
+
+                        {/* Grupo Timber */}
+                        <div className="w-full rounded-lg my-6 text-xl font-semibold text-slate-800">
+                          <a
+                            href="https://grupotimber.com.br"
+                            className="flex w-full items-center justify-between rounded-lg py-2 pr-3.5 text-xl font-semibold text-gray-900"
+                          >
+                            Grupo Timber
+                          </a>
+                        </div>
+
+                      </div>
+
+                      {/* Contato e Categorias*/}
+                      <div className="grid grid-cols-2 w-full b-0 divide-x rounded-lg divide-gray-900/5 bg-white px-2 py-3 fixed left-0 bottom-0">
+                        {callsToAction.map((item) => (
+                          <a
+                            className="flex items-center justify-center gap-x-4 p-3 text-lg font-semibold leading-6 text-gray-900"
                             key={item.name}
-                            as="a"
                             href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 font-semibold leading-7 text-gray-900 flex gap-2 items-center"
                           >
                             <item.icon
                               className="h-5 w-5 flex-none text-gray-400"
                               aria-hidden="true"
                             />
-                            <span>{item.name}</span>
-                          </Disclosure.Button>
+                            {item.name}
+                          </a>
                         ))}
-                      </Disclosure.Panel>
-                    </>
-                  )}
-                </Disclosure>
-
-                {/* Sobre */}
-                <a
-                  href="/sobre"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Sobre
-                </a>
-
-                {/* Grupo Timber */}
-                <a
-                  href="https://grupotimber.com.br"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Grupo Timber
-                </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-
-              {/* Contato e Categorias*/}
-              <div className="grid grid-cols-2 sm:max-w-sm w-full b-0 divide-x rounded-lg divide-gray-900/5 bg-slate-100 px-2 py-3 fixed bottom-0">
-                {callsToAction.map((item) => (
-                  <a
-                    className="flex items-center justify-center gap-x-4 p-3 text-lg font-semibold leading-6 text-gray-900"
-                    key={item.name}
-                    href={item.href}
-                  >
-                    <item.icon
-                      className="h-5 w-5 flex-none text-gray-400"
-                      aria-hidden="true"
-                    />
-                    {item.name}
-                  </a>
-                ))}
-              </div>
-            </div>
-          </div>
+            </Dialog.Panel>
+          </Transition>
         </Dialog.Panel>
+
+        {/* Fundo escuro para fechar o menu ao clicar fora */}
+        {mobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-40 bg-black bg-opacity-50"
+            onClick={() => setMobileMenuOpen(false)}
+          />
+        )}
       </Dialog>
     </header>
   );

@@ -18,8 +18,8 @@ const Homepage = () => {
       >
         <source src="/site/banner.mp4" type="video/mp4" />
       </video>
-      <div className="absolute backdrop-blur-xl bg-slate-700 bg-opacity-40 w-1/2 h-[24rem] rounded-2xl flex flex-col items-center justify-center shadow-lg">
-        <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold mb-8">
+      <div className="absolute backdrop-blur-xl bg-slate-700 bg-opacity-40 p-3 w-[80%] md:w-1/2 md:h-[24rem] rounded-2xl flex flex-col items-center justify-center shadow-lg">
+        <h1 className="text-white text-2xl md:text-4xl lg:text-5xl font-bold mb-8 text-center">
           Excelência na <span className="underline decoration-red-600	">Construção</span> <br />{" "}
           <span className="underline decoration-red-600">Inovação</span> em Maquinário.
         </h1>
@@ -28,15 +28,15 @@ const Homepage = () => {
           nosso portfólio destaca uma variedade de projetos de maquinário que
           incorporam nosso compromisso com o desempenho superior.
         </p>
-        <div className="flex gap-4">
+        <div className="flex gap-2 md:gap-4">
           <a
             href="/produtos"
-            className="p-4 rounded-lg ring-2 ring-white font-bold text-white hover:ring-red-700 hover:bg-red-700 hover:text-white"
+            className="p-1 text-center font-bold text-lg text-white flex items-center rounded-lg  bg-red-600 md:bg-transparent md:ring-2 md:ring-white md:p-4 hover:ring-red-700 hover:bg-red-700 hover:text-white"
           >
             Nossos Produtos
           </a>
 
-          <button className="p-4 rounded-lg flex flex-row gap-1 font-bold text-white hover:text-red-700 hover:ring-red-700 items-center">
+          <button className="p-4 rounded-lg text-lg flex flex-row gap-1 font-bold text-white hover:text-red-700 hover:ring-red-700 items-center">
             Entre em contato
             <svg
               xmlns="http://www.w3.org/2000/svg"
