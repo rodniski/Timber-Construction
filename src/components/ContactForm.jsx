@@ -1,6 +1,5 @@
-import React from "react";
-
-const ContactForm = () => {
+const ContactForm = (produto) => {
+  console.log(produto);
   return (
     <form
       action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D4T000000Fw59"
@@ -22,12 +21,13 @@ const ContactForm = () => {
         id="lead_source"
         value="Timber Construction"
       />
+      
       <input
         type="hidden"
         name="00NNp000006pQ6n"
         for="00NNp000006pQ6n"
         id="00NNp000006pQ6n"
-        value="{productName}"
+        value={produto.productName}
       />
 
       <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
@@ -196,7 +196,7 @@ const ContactForm = () => {
       <div className="mt-10 flex justify-center">
           <button
             type="submit"
-            className="bg-indigo-600 hover:bg-indigo-500 text-white font-medium py-[10px] px-[182px] rounded-lg text-lg"
+            className="bg-red-600 hover:bg-red-500 text-white font-medium py-[10px] px-[182px] rounded-lg text-lg mb-10"
           >
             Enviar
           </button>
