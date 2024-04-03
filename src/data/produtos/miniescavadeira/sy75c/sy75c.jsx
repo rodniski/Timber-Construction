@@ -21,6 +21,7 @@ const SY75C = {
     titulo: "Versatilidade e Desempenho",
     segDesc:
       "A mini Escavadeira SANY SY75C combina versatilidade e desempenho para enfrentar uma variedade de desafios de trabalho. Com um motor potente, deslocamento rápido e eficiência de combustível, esta máquina é capaz de lidar com os trabalhos mais exigentes com facilidade e confiabilidade.",
+    image: "/miniescavadeira/sy75c/2.png",
     High: {
       High1: {
         image: "/svgs/engine.svg",
@@ -38,7 +39,6 @@ const SY75C = {
         desc: "Projetada para oferecer eficiência de combustível, a SY75C permite que você maximize o tempo de trabalho e minimize os custos operacionais, tornando-a uma escolha econômica para qualquer empreendimento.",
       },
     },
-    image: "/miniescavadeira/sy75c/2.png",
   },
   specs: {
     Dimension: {
@@ -70,7 +70,7 @@ const SY75C = {
         "Velocidade de giro": "11,5 rpm",
         "Pressão sobre o solo": "33 kPa",
         "Força de escavação da caçamba": "56 kN",
-        "Rampa": "70%/35º",
+        Rampa: "70%/35º",
         "Força de escavação do braço": "38 kN",
         "Capacidade do tanque de combustível": "150 l",
         "Capacidade do tanque hidráulico": "120 l",

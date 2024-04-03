@@ -2,7 +2,7 @@ const SY155H = {
   categoria: "Escavadeira Média",
   name: "SANY SY155H",
   desc: "A Escavadeira hidráulica Sany SY155H é perfeita para quem procura um modelo eficiente. Com motor potente e estruturas reforçadas, a SY155H garante ainda mais eficiência em trabalho, força, conforto e total segurança em operações mais complexas. A potência do motor ISUZU personalizado do modelo de Escavadeira SY155H Sany é de 113hp, com mais potência hidráulica, eficiência operacional e economia de combustível.",
-  image: "/escavadeira/SY155H/3.png",
+  image: "/escavadeira/sy155h/3.png",
   features: {
       high1: {
           descrição: "Peso Operacional: 14100 KG",

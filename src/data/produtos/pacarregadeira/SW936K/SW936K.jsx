@@ -2,7 +2,7 @@ const SW936K = {
   categoria: "Pá Carregadeira",
   name: "SANY SW936K",
   desc: "A PÁ CARREGADEIRA DE ALTA EFICIÊNCIA, CONFIABILIDADE E EXCELENTE CONFORTO. A pá carregadeira SW936K, pode carregar mais de 3t e está equipada com conversor de torque de grande capacidade e sistema de frenagem totalmente hidráulico. Contém uma cabine com espaço amplo, maior vedação e baixo nível de ruído, assento com suspensão mecânica e 6 saídas de ar condicionado.",
-  image: "/Pa-carregadeira/1 36K.png",
+  image: "/pacarregadeira/sw936k/1.png",
   features: {
     high1: {
       descrição: "Peso Operacional: 11 T",
@@ -38,7 +38,7 @@ const SW936K = {
         desc: "Equipada com um sistema de controle inteligente integrado, a SW956E oferece modernidade e tecnologia ao operador, proporcionando maior facilidade de operação e eficiência no trabalho.",
       },
     },
-    image: "/Pa-carregadeira/2 36k.png",
+    image: "/pacarregadeirasw936k/sw36k/2.png",
   },
   specs: {
     "Faixa de operação": {

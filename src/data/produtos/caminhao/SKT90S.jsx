@@ -2,7 +2,7 @@ const SKT90S = {
   categoria: "Caminhão para Mineração",
   name: "SANY SKT90S",
   desc: "O Caminhão Fora de Estrada SANY SKT90S é uma máquina robusta e confiável, projetada para enfrentar os desafios mais exigentes em operações de mineração. Com sua capacidade impressionante de carga e construção resistente, o SKT90S oferece desempenho excepcional em ambientes adversos, garantindo eficiência e produtividade em cada ciclo de trabalho.",
-  image: "/Caminhao/1.jpg",
+  image: "/caminhao/1.png",
   features: {
     high1: {
       descrição: "Peso: 32 T",
@@ -21,6 +21,7 @@ const SKT90S = {
     titulo: "Robustez e Confiabilidade",
     segDesc:
       "O Caminhão Fora de Estrada SANY SKT90S é projetado para oferecer robustez e confiabilidade em todas as condições de trabalho. Com sua estrutura durável e sistema de tração potente, o SKT90S pode lidar com cargas pesadas e terrenos difíceis, garantindo operações suaves e eficientes em minas e pedreiras.",
+    image: "/caminhao/2.png",
     High: {
       High1: {
         image: "/svgs/engine.svg",
@@ -38,7 +39,6 @@ const SKT90S = {
         desc: "Com sua capacidade de carga e eficiência operacional, o SKT90S maximiza a produtividade e minimiza o tempo de inatividade, tornando-se um investimento valioso para operações de mineração.",
       },
     },
-    image: "/Caminhao/2.jpg",
   },
   specs: {
     specifics: {
@@ -57,12 +57,12 @@ const SKT90S = {
       titulo: "Parâmetros Tecnicos",
       image: "/svgs/capacity.svg",
       data: {
-        "Motor": "WEICHAI WP13G530E310",
-        "Tipo": "4-STROKE TURBOCHARGED INTERCOOLED",
+        Motor: "WEICHAI WP13G530E310",
+        Tipo: "4-STROKE TURBOCHARGED INTERCOOLED",
         "Potência Nominal": "390 S30HP @ 2.100 RPM",
         "Torque Máximo": "1.500-2300",
-        "Transmissão": "FC6A250DPR",
-        "Eixo": "PENGXIANG",
+        Transmissão: "FC6A250DPR",
+        Eixo: "PENGXIANG",
         "Dimensões Gerais (mm)": "9.107 x 3.60 x 4.530",
         "Carga Nominal (kg)": "60.000",
         "Peso Líquido do Caminhão (T)": "32",

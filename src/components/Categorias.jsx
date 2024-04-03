@@ -4,8 +4,8 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import Badge from "./Resources/Badge";
-import Modal from "./Resources/Modal";
+import Badge from "./resources/Badge";
+import Modal from "./resources/Modal";
 import ContactForm from "./ContactForm";
 
 const Categorias = ({ category, products }) => {
@@ -40,7 +40,7 @@ const Categorias = ({ category, products }) => {
               >
                 <div className="relative" style={{ paddingBottom: "100%" }}>
                   <img
-                    src={product.Src}
+                    src={product.image}
                     alt={productName}
                     className="absolute inset-0 w-full h-full object-cover object-center"
                   />
@@ -100,7 +100,7 @@ const Categorias = ({ category, products }) => {
           <Modal onClose={handleCloseModal} productName={selectedProduct.name}>
             <ContactForm
               productName={selectedProduct.name}
-              productImage={selectedProduct.Src}
+              productImage={selectedProduct.image}
             />
           </Modal>
         )}

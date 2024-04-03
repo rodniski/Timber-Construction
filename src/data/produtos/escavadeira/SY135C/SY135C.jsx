@@ -2,7 +2,7 @@ const SY135C = {
   categoria: "Escavadeira média",
   name: "SANY SY135C",
   desc: "Com uma potência de saída do motor otimizada e modos de trabalho multifuncionais, esta máquina oferece uma combinação única de desempenho e eficiência. Sua estrutura robusta e durável, juntamente com a grande capacidade do tanque de combustível, garante uma operação contínua mesmo nos ambientes mais desafiadores. ",
-  image: "/escavadeira/SY135C/1.png",
+  image: "/escavadeira/sy135c/1.png",
   features: {
     high1: {
       image: "/svgs/speed.svg",
@@ -21,7 +21,7 @@ const SY135C = {
     titulo: "Desempenho e Versatilidade",
     segDesc:
       "A Escavadeira SY135C é projetada para oferecer desempenho superior e versatilidade em uma variedade de aplicações industriais.",
-    image: "/escavadeira/SY135C/4.png",
+    image: "/escavadeira/sy135c/4.png",
     High: {
       High1: {
         image: "/svgs/compass.svg",
