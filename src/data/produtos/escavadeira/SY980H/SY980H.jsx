@@ -95,7 +95,7 @@ const SY980H = {
         "Velocidade de Giro": "7 rpm",
         "Pressão sobre o Solo": "132 kPa",
         "Força de Escavação da Caçamba": "495 kN",
-        "Força de Escavação do Braço": "345 kN",
+        "Força de Escavação do Braço": "345 kN ",
       },
     },
   },
