@@ -1,7 +1,7 @@
 const SYL956H5 = {
   categoria: "Pá Carregadeira",
   name: "SANY SYL956H5",
-  desc: "A pá carregadeira SYL956H5 oferece alta eficiência e baixo consumo. Seu sistema hidráulico sensível à carga de alta pressão e os principais componentes hidráulicos distribuem o fluxo sob demanda, reduzindo a perda desnecessária de energia e economizando energia em até 10%. Equipada com motor potente Cummins QSL89, reduz o consumo de combustível com sucesso.",
+  desc: "A pá carregadeira SYL956H5 oferece alta eficiência e baixo consumo. Seu sistema hidráulico sensível à carga de alta pressão e os principais Componentes hidráulicos distribuem o fluxo sob demanda, reduzindo a perda desnecessária de energia e economizando energia em até 10%. Equipada com motor potente Cummins QSL89, reduz o consumo de combustível com sucesso.",
   image: "/pacarregadeira/1 6h5.png",
   features: {
     high1: {
@@ -20,7 +20,7 @@ const SYL956H5 = {
   dev: {
     titulo: "Eficiência e Baixo Consumo",
     segDesc:
-      "A pá carregadeira SYL956H5 destaca-se pela sua eficiência e baixo consumo. Seu sistema hidráulico de alta pressão e motor potente proporcionam economia de energia, reduzindo o consumo de combustível. Além disso, seu design robusto e componentes de alta qualidade garantem desempenho e durabilidade.",
+      "A pá carregadeira SYL956H5 destaca-se pela sua eficiência e baixo consumo. Seu sistema hidráulico de alta pressão e motor potente proporcionam economia de energia, reduzindo o consumo de combustível. Além disso, seu design robusto e Componentes de alta qualidade garantem desempenho e durabilidade.",
     High: {
       High1: {
         image: "/svgs/engine.svg",
@@ -35,7 +35,7 @@ const SYL956H5 = {
       High3: {
         image: "/svgs/screwdriver.svg",
         title: "Manutenção Facilitada",
-        desc: "Projetada com acesso fácil aos componentes para manutenção rápida e eficiente, reduzindo o tempo de inatividade e aumentando a eficiência operacional.",
+        desc: "Projetada com acesso fácil aos Componentes para manutenção rápida e eficiente, reduzindo o tempo de inatividade e aumentando a eficiência operacional.",
       },
     },
     image: "/pacarregadeira/2 6h5.png",

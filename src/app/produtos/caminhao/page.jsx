@@ -1,5 +1,5 @@
 import React from "react";
-import Product from "@/components/produtos/product"; // Importando o componente ProductPage
+import Product from "@/Components/produtos/product"; // Importando o Componente ProductPage
 import SKT90S from "@/data/produtos/caminhao/skt90s"; // Importando as informações específicas do produto SKT90S
 function ProductPage() {
   return (

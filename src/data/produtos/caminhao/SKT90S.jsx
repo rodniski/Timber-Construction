@@ -31,7 +31,7 @@ const SKT90S = {
       High2: {
         image: "/svgs/truck.svg",
         title: "Estrutura Resistente",
-        desc: "Sua estrutura robusta e componentes de alta qualidade garantem durabilidade e resistência, mesmo sob as cargas mais pesadas e o uso intensivo em ambientes de mineração.",
+        desc: "Sua estrutura robusta e Componentes de alta qualidade garantem durabilidade e resistência, mesmo sob as cargas mais pesadas e o uso intensivo em ambientes de mineração.",
       },
       High3: {
         image: "/svgs/truck-speed.svg",

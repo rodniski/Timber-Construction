@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer"; // Importe useInView
 
 function ProductDetails({ product }) {
   const { dev, name } = product;
-  const [ref, inView] = useInView(); // Use o hook useInView para detectar a visibilidade do componente
+  const [ref, inView] = useInView(); // Use o hook useInView para detectar a visibilidade do Componente
 
   const itemVariants = {
     hidden: { opacity: 0, y: 50 },

@@ -1,7 +1,7 @@
 const SY215LR = {
   categoria: "Escavadeira de longo alcance",
   name: "SY215LR",
-  desc: "A Escavadeira SY215LR foi projetada para operações que exijam longo alcance. Possui motor personalizado, componentes reforçados, alta eficiência operacional, baixo consumo de combustível, fácil manutenção e cabine confortável.",
+  desc: "A Escavadeira SY215LR foi projetada para operações que exijam longo alcance. Possui motor personalizado, Componentes reforçados, alta eficiência operacional, baixo consumo de combustível, fácil manutenção e cabine confortável.",
   image: "/escavadeira/sy215lr/1.png",
   features: {
     high1: {

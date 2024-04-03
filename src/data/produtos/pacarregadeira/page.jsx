@@ -1,6 +1,6 @@
 import React from "react";
-import CategoryProducts from "@/components/CategoryProducts";
-import productsData from "@/components/productsData";
+import CategoryProducts from "@/Components/CategoryProducts";
+import productsData from "@/Components/productsData";
 
 export default function paCarregadeiraPage() {
   // Acessando os produtos da Retro Escavadeira

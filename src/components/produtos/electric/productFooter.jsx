@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import ContactForm from "./ContactForm"; // Importe o componente ContactForm aqui
+import ContactForm from "./ContactForm"; // Importe o Componente ContactForm aqui
 
 const ProductFooter = ({ specs }) => {
   const [activeTab, setActiveTab] = useState("Motor");

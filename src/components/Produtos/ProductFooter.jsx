@@ -1,12 +1,12 @@
 "use client";
-import ContactForm from "../contactform"; // Importe o componente ContactForm aqui
+import ContactForm from "../contactform"; // Importe o Componente ContactForm aqui
 import React, { useState } from "react"; // Importe useState do pacote react
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer"; // Importe useInView
 
 const ProductFooter = ({ specs }) => {
   const [activeTab, setActiveTab] = useState("Motor");
-  const [ref, inView] = useInView(); // Use o hook useInView para detectar a visibilidade do componente
+  const [ref, inView] = useInView(); // Use o hook useInView para detectar a visibilidade do Componente
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);

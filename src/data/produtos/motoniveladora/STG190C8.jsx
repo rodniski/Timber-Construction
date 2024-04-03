@@ -36,7 +36,7 @@ const STG190C8 = {
       High3: {
         image: "/svgs/screwdriver.svg",
         title: "Facilidade de Manutenção",
-        desc: "Projetada com acesso fácil aos componentes para manutenção rápida e eficiente, reduzindo o tempo de inatividade e aumentando a eficiência operacional.",
+        desc: "Projetada com acesso fácil aos Componentes para manutenção rápida e eficiente, reduzindo o tempo de inatividade e aumentando a eficiência operacional.",
       },
     },
   },
