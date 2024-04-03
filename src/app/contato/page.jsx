@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import ContactForm from "../../Components/contactform"; // Importe o Componente ContactForm aqui
+import ContactForm from "../../Components/Contactform"; // Importe o Componente ContactForm aqui
 
 const ContactPage = () => {
   const text = "Diga Olá";
