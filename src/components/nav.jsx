@@ -60,14 +60,6 @@ const callsToAction = [
   { name: "Mineração", href: "/produtos/caminhao", icon: GiMiningHelmet },
   { name: "Categorias", href: "/produtos", icon: BiSolidCategoryAlt },
 ];
-const itemVariants = {
-  open: {
-    opacity: 1,
-    y: 0,
-    transition: { type: "spring", stiffness: 300, damping: 24 },
-  },
-  closed: { opacity: 0, y: 20, transition: { duration: 0.2 } },
-};
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -77,15 +69,15 @@ export default function Nav() {
   const [hovering, setHovering] = useState(false);
 
   return (
-    <header className="bg-slate-100 mb-5">
+    <header className="absolut p-2 backdrop-blur-xl bg-slate-600 bg-opacity-20 shadow-lg">
       <nav
-        className="mx-auto flex max-w-7xl items-center justify-between p-6 md:px-8"
+        className="flex w-full bg-transparent justify-between items-center md:px-8"
         aria-label="Global"
       >
         <div className="flex md:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Timber | Sany</span>
-            <img className="h-14 md:h-16 lg:h-20 w-auto" src="/logo.png" alt="" />
+            <img className="h-10 md:h-16 lg:h-20 w-auto" src="/logo.png" alt="" />
           </a>
         </div>
         <div className="flex md:hidden">
@@ -105,10 +97,10 @@ export default function Nav() {
             onMouseEnter={() => setHovering(true)}
             onMouseLeave={() => setHovering(false)}
           >
-            <Popover.Button className="flex items-center gap-x-1 text-lg font-semibold leading-6 text-gray-900 hover:text-red-700">
+            <Popover.Button className="flex items-center gap-x-1 text-lg uppercase font-bold leading-6 text-white hover:text-red-500">
               Produtos
               <ChevronDownIcon
-                className="h-5 w-5 flex-none text-gray-400"
+                className="h-5 w-5 flex-none text-white"
                 aria-hidden="true"
               />
             </Popover.Button>
@@ -175,13 +167,13 @@ export default function Nav() {
 
           <a
             href="/sobre"
-            className="text-lg font-semibold leading-6 text-gray-900 hover:text-red-700"
+            className="text-lg font-semibold uppercase leading-6 text-white hover:text-red-700"
           >
             Sobre
           </a>
           <a
             href="https://grupotimber.com.br"
-            className="text-lg font-semibold leading-6 text-gray-900 hover:text-red-700"
+            className="text-lg font-semibold uppercase leading-6 text-white hover:text-red-700"
           >
             Grupo Timber
           </a>
@@ -189,7 +181,7 @@ export default function Nav() {
         <div className="hidden md:flex md:flex-1 md:justify-end">
           <a
             href="/contato"
-            className="text-lg font-semibold leading-6 text-gray-900 hover:text-red-700"
+            className="text-lg font-semibold uppercase leading-6 text-white hover:text-red-700"
           >
             Contato <span aria-hidden="true">&rarr;</span>
           </a>

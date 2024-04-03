@@ -35,14 +35,12 @@ const TransitionProvider = ({ children }) => {
           animate={{ height: "0vh" }}
           transition={{ duration: 0.2, ease: "easeInOut", delay: 0.1 }} // Ajustado a duração, a função de easing e o atraso
         />
-
-        {/* Navegação */}
-        <div className="h-24">
-          <Nav />
-        </div>
-
         {/* Conteúdo */}
         <div className="h-[calc(100vh-5rem)]">{children}</div>
+      </div>
+      {/* Navegação */}
+      <div className="h-auto w-full  top-0 absolute">
+        <Nav />
       </div>
     </AnimatePresence>
   );
