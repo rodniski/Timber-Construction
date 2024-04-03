@@ -1,9 +1,18 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Head from 'next/head';
 
 const Homepage = () => {
   return (
+    <>
+    <Head>
+      <title>Excelência na Construção - Inovação em Maquinário</title>
+      <meta property="og:title" content="Excelência na Construção - Inovação em Maquinário" />
+      <meta property="og:description" content="Com dedicação à qualidade e domínio da tecnologia de construção, nosso portfólio destaca uma variedade de projetos de maquinário que incorporam nosso compromisso com o desempenho superior." />
+      <meta property="og:image" content="/roloCompactador/highlight.png" />
+      <meta property="og:url" content="https://construction.grupotimber.com.br" />
+    </Head>
     <motion.div
       className="h-screen flex items-center justify-center"
       initial={{ opacity: 0, y: 50 }}
@@ -56,6 +65,7 @@ const Homepage = () => {
         </div>
       </div>
     </motion.div>
+    </>
   );
 };
 

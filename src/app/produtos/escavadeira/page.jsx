@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 import Categorias from "@/components/Categorias";
 import productsData from "@/data/productsData";
 
@@ -8,9 +9,15 @@ export default function escavadeiraPage() {
   const escavadeiraCategoryData = productsData[category];
   const escavadeiraProducts = escavadeiraCategoryData.products;
   return (
-    <Categorias 
-      category={category}
-      products={escavadeiraProducts}
-    />
+    <>
+      <Head>
+        <title>Escavadeiras Sany - Grupo Timber</title>
+        <meta
+          name="description"
+          content="Nossas escavadeiras são construídas com tecnologia de ponta e características inovadoras para garantir a máxima produtividade e durabilidade em qualquer ambiente de trabalho."
+        />
+      </Head>
+      <Categorias category={category} products={escavadeiraProducts} />
+    </>
   );
 }
