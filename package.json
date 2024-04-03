@@ -12,6 +12,7 @@
     "@headlessui/react": "^1.7.18",
     "@heroicons/react": "^2.1.1",
     "@tailwindcss/forms": "^0.5.7",
+    "@vercel/analytics": "^1.2.2",
     "@vercel/speed-insights": "^1.0.10",
     "framer-motion": "^11.0.22",
     "headlessui": "^0.0.0",
@@ -20,7 +21,8 @@
     "react-dom": "18",
     "react-icons": "^5.0.1",
     "react-input-mask": "^2.0.4",
-    "react-intersection-observer": "^9.8.1"
+    "react-intersection-observer": "^9.8.1",
+    "vercel": "^33.6.3"
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
