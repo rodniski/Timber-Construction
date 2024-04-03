@@ -1,5 +1,5 @@
 "use client";
-import ContactForm from "../ContactForm"; // Importe o componente ContactForm aqui
+import ContactForm from "../contactform"; // Importe o componente ContactForm aqui
 import React, { useState } from "react"; // Importe useState do pacote react
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer"; // Importe useInView

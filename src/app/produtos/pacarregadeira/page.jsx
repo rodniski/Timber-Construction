@@ -1,5 +1,5 @@
 import React from "react";
-import Categorias from "@/components/Categorias";
+import Categorias from "@/components/categorias";
 import productsData from "@/data/productsData";
 
 export default function pacarregadeiraPage() {
