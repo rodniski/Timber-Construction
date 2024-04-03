@@ -1,6 +1,6 @@
 import React from "react";
 import Product from "@components/Produtos/Product";  // Importando o componente ProductPage
-import SY980H from "@data/produtos/escavadeira/sy980h/SY980H"; // Importando as informações específicas do produto SY980H
+import SY980H from "@/data/produtos/escavadeira/sy980h/SY980H"; // Importando as informações específicas do produto SY980H
 function ProductPage() {
   return (
     <Product product={SY980H} />
