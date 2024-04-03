@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Homepage = () => {
   return (
     <motion.div
-      className="h-screen overflow-hidden flex items-center justify-center"
+      className="h-screen flex items-center justify-center"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, delay: 0.5 }}
@@ -14,10 +14,9 @@ const Homepage = () => {
         autoPlay
         loop
         muted
-        className="w-full top-0 h-full object-cover"
+        className="w-full h-full object-cover"
       >
         <source src="/site/banner.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
       </video>
       <div className="absolute backdrop-blur-xl bg-slate-700 bg-opacity-40 w-1/2 h-[24rem] rounded-2xl flex flex-col items-center justify-center shadow-lg">
         <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold mb-8">

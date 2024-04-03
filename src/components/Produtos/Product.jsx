@@ -4,7 +4,7 @@ import ProductDetails from "./ProductDetails";
 import ProductFooter from "./ProductFooter"; // Importando o componente 
 function Product({ product }) {
   return (
-    <div className="container w-full mx-auto flex flex-col justify-center bg-slate-100"> {/* Adicione a classe bg-slate-100 aqui */}
+    <div className="container h-auto mx-auto mt-15  flex flex-col justify-center bg-slate-100"> {/* Adicione a classe bg-slate-100 aqui */}
       {/* Hero do produto */}
       <ProductHero product={product}/>
 

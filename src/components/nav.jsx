@@ -69,7 +69,7 @@ export default function Nav() {
   const [hovering, setHovering] = useState(false);
 
   return (
-    <header className="absolut p-2 backdrop-blur-xl bg-slate-600 bg-opacity-20 shadow-lg">
+    <header className="p-2 backdrop-blur-xl bg-slate-600 bg-opacity-50 shadow-lg">
       <nav
         className="flex w-full bg-transparent justify-between items-center md:px-8"
         aria-label="Global"

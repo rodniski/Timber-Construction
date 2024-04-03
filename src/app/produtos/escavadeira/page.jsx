@@ -8,7 +8,7 @@ export default function escavadeiraPage() {
   const escavadeiraCategoryData = productsData[category];
   const escavadeiraProducts = escavadeiraCategoryData.products;
   return (
-    <Categorias
+    <Categorias 
       category={category}
       products={escavadeiraProducts}
     />

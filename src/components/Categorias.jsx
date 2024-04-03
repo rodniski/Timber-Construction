@@ -22,7 +22,7 @@ const Categorias = ({ category, products }) => {
   };
 
   return (
-    <div className="bg-slate-100">
+    <div className="bg-slate-100 pt-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
         <h2 className="text-3xl font-bold text-red-700 mb-8">{category}</h2>
 
