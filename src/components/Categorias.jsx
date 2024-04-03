@@ -4,8 +4,8 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import Badge from "./Resources/Badge";
-import Modal from "./Resources/Modal";
+import Badge from "./resources/Badge";
+import Modal from "./resources/Modal";
 import ContactForm from "./ContactForm";
 
 const Categorias = ({ category, products }) => {

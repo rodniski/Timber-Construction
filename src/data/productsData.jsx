@@ -17,7 +17,7 @@ const ProductsData = {
       },
       SY135C: {
         name: "SY135C",
-        image: "/escavadeira/sy135h/1.png",
+        image: "/escavadeira/sy135c/1.png",
         href: "/produtos/escavadeira/sy135c",
         Tipo: "Escavadeira média",
         Peso: "13.800 KG",
