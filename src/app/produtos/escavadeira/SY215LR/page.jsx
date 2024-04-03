@@ -6,4 +6,4 @@ function ProductPage() {
     <Product product={SY215LR} />
   );
 }
-export default ProductPage;
+export default ProductPage; 
