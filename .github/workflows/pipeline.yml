@@ -6,9 +6,9 @@ on:
 jobs:
     build:
         runs-on: ubuntu-latest
-        steps:
+        steps:        
         - uses: actions/checkout@v3
-        - run: ls ${{ github.workspace }}
+        - run: npm install
     test-job:
         needs: build
         runs-on: ubuntu-latest
