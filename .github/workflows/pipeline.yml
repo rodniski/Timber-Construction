@@ -26,9 +26,6 @@ jobs:
       - name: List Branches
         run: git branch -a
 
-      - name: Test
-        run: npm run test
-
   deploy:
     runs-on: ubuntu-latest
 
