@@ -23,6 +23,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: List Branches
+        run: git branch -a
+
       - name: Test
         run: npm run test
 
