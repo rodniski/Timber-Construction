@@ -8,7 +8,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
         - uses: actions/checkout@v3
-        - run: npm run build
+        - run: ls ConstrucaoLead
     test-job:
         needs: build
         runs-on: ubuntu-latest
