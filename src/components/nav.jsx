@@ -16,46 +16,68 @@ import { GiHorizonRoad, GiMiningHelmet } from "react-icons/gi";
 import { BiSolidCategoryAlt } from "react-icons/bi";
 
 //JSONs
-const produtos = [
-  {
-    name: "Mini Escavadeira",
-    description: "Versatilidade e eficiência em espaços restritos.",
-    href: "/produtos/mini-escavadeira",
-    icon: BuildingStorefrontIcon,
-  },
+const categorias = [
   {
     name: "Escavadeira",
-    description: "Potência para a sua obra.",
-    href: "/produtos/escavadeira",
-    icon: BuildingOffice2Icon,
+    description: "Inclui Mini Escavadeira, Escavadeira e Retroescavadeira",
+    items: [
+      {
+        name: "Mini Escavadeira",
+        description: "Versatilidade e eficiência em espaços restritos.",
+        href: "/produtos/mini-escavadeira",
+        icon: BuildingStorefrontIcon,
+      },
+      {
+        name: "Escavadeira",
+        description: "Potência para a sua obra.",
+        href: "/produtos/escavadeira",
+        icon: BuildingOffice2Icon,
+      },
+      {
+        name: "Retroescavadeira",
+        description: "Versátil para projetos diversos.",
+        href: "/produtos/retroescavadeira",
+        icon: TbBackhoe,
+      },
+    ],
   },
   {
-    name: "Retroescavadeira",
-    description: "Versátil para projetos diversos.",
-    href: "/produtos/retroescavadeira",
-    icon: TbBackhoe,
+    name: "Maquinário para Estrada",
+    description: "Inclui Rolo Compactador, Pá Carregadeira e Motoniveladora",
+    items: [
+      {
+        name: "Pá Carregadeira",
+        description: "Eficácia em cada movimento.",
+        href: "/produtos/pa-carregadeira",
+        icon: FaMountainCity,
+      },
+      {
+        name: "Motoniveladora",
+        description: "Domine o terreno com precisão e potência",
+        href: "/produtos/motoniveladora",
+        icon: MdEditRoad,
+      },
+      {
+        name: "Rolo Compactador",
+        description: "Para uma construção sólida e duradoura",
+        href: "/produtos/rolo-compactador",
+        icon: GiHorizonRoad,
+      },
+    ],
   },
   {
-    name: "Pá Carregadeira",
-    description: "Eficácia em cada movimento.",
-    href: "/produtos/pa-carregadeira",
-    icon: FaMountainCity,
-  },
-  {
-    name: "Motoniveladora",
-    description: "Domine o terreno com precisão e potência",
-    href: "/produtos/motoniveladora",
-    icon: MdEditRoad,
-  },
-  {
-    name: "Rolo Compactador",
-    description: "Para uma construção sólida e duradoura",
-    href: "/produtos/rolo-compactador",
-    icon: GiHorizonRoad,
+    name: "Mineração",
+    description: "Inclui Caminhão para Mineração",
+    items: [
+      {
+        name: "Caminhão para Mineração",
+        description: "Equipamento resistente para operações de mineração.",
+        href: "/produtos/caminhao",
+        icon: GiMiningHelmet,
+      },
+    ],
   },
 ];
-produtos.sort((a, b) => a.name.localeCompare(b.name));
-
 const callsToAction = [
   { name: "Mineração", href: "/produtos/caminhao", icon: GiMiningHelmet },
   { name: "Categorias", href: "/produtos", icon: BiSolidCategoryAlt },
@@ -66,22 +88,15 @@ function classNames(...classes) {
 
 export default function Nav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [hovering, setHovering] = useState(false);
+  const [hoveringCategoria, setHoveringCategoria] = useState(null); // Estado para controlar qual categoria está sendo hover
 
   return (
-    <header className="p-4 md:p-2 backdrop-blur-xl bg-slate-600 bg-opacity-50 shadow-lg">
-      <nav
-        className="flex w-full bg-transparent justify-between items-center md:px-8"
-        aria-label="Global"
-      >
+    <header className="p-4 md:p-2 backdrop-blur-sm bg-slate-50 bg-opacity-10 shadow-sm">
+      <nav className="flex w-full bg-transparent justify-between items-center md:px-8" aria-label="Global">
         <div className="flex md:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Timber | Sany</span>
-            <img
-              className="h-14  md:h-16 lg:h-20 w-auto"
-              src="/logo.png"
-              alt=""
-            />
+            <img className="h-14  md:h-16 lg:h-20 w-auto" src="/logo.png" alt="" />
           </a>
         </div>
         <div className="flex md:hidden">
@@ -95,87 +110,61 @@ export default function Nav() {
           </button>
         </div>
 
-        <Popover.Group className="hidden md:flex md:gap-x-12 focus:text-slate-200">
-          <Popover
-            className="relative"
-            onMouseEnter={() => setHovering(true)}
-            onMouseLeave={() => setHovering(false)}
-          >
-            <Popover.Button className="flex items-center gap-x-1 text-lg uppercase font-bold leading-6 text-white hover:text-red-500">
-              Produtos
-              <ChevronDownIcon
-                className="h-5 w-5 flex-none text-white"
-                aria-hidden="true"
-              />
-            </Popover.Button>
-            <Transition
-              as={Fragment}
-              show={hovering}
-              enter="transition ease-out duration-200"
-              enterFrom="opacity-0 translate-y-1"
-              enterTo="opacity-100 translate-y-0"
-              leave="transition ease-in duration-150"
-              leaveFrom="opacity-100 translate-y-0"
-              leaveTo="opacity-0 translate-y-1"
+        <Popover.Group className="hidden md:flex md:gap-x-12 focus:text-slate-600">
+          {categorias.map((categoria) => (
+            <Popover
+              key={categoria.name}
+              className="relative"
+              onMouseEnter={() => setHoveringCategoria(categoria.name)} // Atualiza o estado da categoria ao entrar
+              onMouseLeave={() => setHoveringCategoria(null)} // Reseta o estado da categoria ao sair
             >
-              <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg">
-                <div className="p-4 ">
-                  {produtos.map((item, index) => (
-                    <motion.div
-                      key={index}
-                      whileHover={{ scale: 1.05 }}
-                      transition={{ duration: 0.3 }}
-                      className="group relative flex items-center gap-x-6 rounded-lg p-4 text-lg leading-6 hover:bg-slate-300"
-                    >
+              <Popover.Button className="flex items-center gap-x-1 text-lg uppercase font-bold leading-6 text-slate-800 hover:text-slate-500">
+                {categoria.name}
+                <ChevronDownIcon className="h-5 w-5 flex-none text-slate-800" aria-hidden="true" />
+              </Popover.Button>
+              <Transition
+                as={Fragment}
+                show={hoveringCategoria === categoria.name} // Exibe o submenu apenas se a categoria estiver sendo hover
+                enter="transition ease-out duration-200"
+                enterFrom="opacity-0 translate-y-1"
+                enterTo="opacity-100 translate-y-0"
+                leave="transition ease-in duration-150"
+                leaveFrom="opacity-100 translate-y-0"
+                leaveTo="opacity-0 translate-y-1"
+              >
+                <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg">
+                  <div className="p-4 ">
+                    {categoria.items.map((item, index) => (
                       <motion.div
-                        whileHover={{ rotate: 360 }}
+                        key={index}
+                        whileHover={{ scale: 1.05 }}
                         transition={{ duration: 0.3 }}
-                        className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                        className="group relative flex items-center gap-x-6 rounded-lg p-4 text-lg leading-6 hover:bg-slate-300"
                       >
-                        <item.icon
-                          className="h-6 w-6 text-stone-800 group-hover:text-red-700"
-                          aria-hidden="true"
-                        />
-                      </motion.div>
-                      <div className="flex-auto">
-                        <a
-                          href={item.href}
-                          className="block font-semibold text-stone-900"
+                        <motion.div
+                          whileHover={{ rotate: 360 }}
+                          transition={{ duration: 0.3 }}
+                          className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
                         >
-                          {item.name}
-                          <span className="absolute inset-0" />
-                        </a>
-                        <p className="mt-1 text-gray-600">{item.description}</p>
-                      </div>
-                    </motion.div>
-                  ))}
-                </div>
-                <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
-                  {callsToAction.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className="flex items-center justify-center gap-x-2.5 p-3 text-lg font-semibold leading-6 text-gray-900 hover:bg-gray-100"
-                    >
-                      <item.icon
-                        className="h-5 w-5 flex-none text-gray-400"
-                        aria-hidden="true"
-                      />
-                      {item.name}
-                    </a>
-                  ))}
-                </div>
-              </Popover.Panel>
-            </Transition>
-          </Popover>
+                          <item.icon className="h-6 w-6 text-stone-800 group-hover:text-red-700" aria-hidden="true" />
+                        </motion.div>
+                        <div className="flex-auto">
+                          <a href={item.href} className="block font-semibold text-stone-900">
+                            {item.name}
+                            <span className="absolute inset-0" />
+                          </a>
+                          <p className="mt-1 text-gray-600">{item.description}</p>
+                        </div>
+                      </motion.div>
+                    ))}
+                  </div>
+                </Popover.Panel>
+              </Transition>
+            </Popover>
+          ))}
         </Popover.Group>
         <div className="hidden md:flex md:flex-1 md:justify-end">
-          <a
-            href="https://grupotimber.com.br"
-            className="text-lg font-semibold uppercase leading-6 text-white hover:text-red-700"
-          >
-            Grupo Timber
-          </a>
+          <a href="https://grupotimber.com.br" className="text-lg font-semibold uppercase leading-6 text-slate-800 hover:text-red-700">Grupo Timber</a>
         </div>
       </nav>
       <Dialog
