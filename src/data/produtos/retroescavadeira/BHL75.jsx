@@ -38,7 +38,7 @@ const BHL75 = {
         desc: "Com uma altura da cabine de 3.129mm, oferece conforto e visibilidade ao operador, garantindo uma experiência ergonômica durante longas jornadas de trabalho."
       },
     },
-    image: "/retroEscavadeira/2.png",
+    image: "/retroEscavadeira/1.png",
   },
   specs: {
     Motor: {
