@@ -91,7 +91,7 @@ export default function Nav() {
   const [hoveringCategoria, setHoveringCategoria] = useState(null); // Estado para controlar qual categoria está sendo hover
 
   return (
-    <header className="p-4 md:p-2 backdrop-blur-xl bg-slate-100 bg-opacity-70 shadow-sm">
+    <header className="p-4 md:p-4 backdrop-blur-xl bg-slate-100 bg-opacity-70 shadow-sm">
       <nav
         className="flex w-full bg-transparent justify-between items-center md:px-8"
         aria-label="Global"
@@ -100,7 +100,7 @@ export default function Nav() {
           <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Timber | Sany</span>
             <img
-              className="h-8  md:h-16 lg:h-14 w-auto text-black"
+              className="h-5  md:h-16 lg:h-10 w-auto text-black"
               src="/Timber x Sany BL.png"
               alt=""
             />
