@@ -27,7 +27,7 @@ const Homepage = () => {
       >
         <source src="/site/banner.mp4" type="video/mp4" />
       </video>
-      <div className="absolute backdrop-blur-xl bg-slate-700 bg-opacity-40 p-3 md:p-8 w-[80%] md:w-1/2 rounded-2xl flex flex-col items-center justify-center shadow-lg">
+      <div className="absolute backdrop-blur-xl bg-slate-950 bg-opacity-60 p-3 md:p-8 w-[80%] md:w-1/2 rounded-2xl flex flex-col items-center justify-center shadow-lg">
         <img src="/sany.png" alt="" className="h-20 mb-8"/>
         <h1 className="text-white text-2xl md:text-4xl lg:text-5xl font-bold mb-8 text-center">
           Excelência na <span className="underline decoration-red-600	">Construção</span> <br />{" "}
