@@ -1,5 +1,5 @@
 "use client";
-
+import AboutPage from "./sobre/page"
 import { motion } from "framer-motion";
 import Head from 'next/head';
 
@@ -46,7 +46,9 @@ const Homepage = () => {
           </a>
         </div>
       </div>
+      
     </motion.div>
+    <AboutPage/>
     </>
   );
 };
