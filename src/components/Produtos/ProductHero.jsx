@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import image from 'next/image'
 
 function ProductHero({ product }) {
   const [inView, setInView] = useState(false);
@@ -25,7 +26,7 @@ function ProductHero({ product }) {
   const staggerDelay = 0.1;
 
   return (
-    <div className="bg-slate-100 flex md:justify-between my-16 xl:h-[75vh] xl:flex-row flex-col items-center mx-6 gap-5">
+    <div className="bg-slate-100 flex md:justify-between my-40 xl:h-[75vh] xl:flex-row flex-col items-center mx-6 gap-5">
       {/* Conteúdo da esquerda */}
       <div className="w-full mb-6 md:mb-0">
         {/* Categoria */}
@@ -55,7 +56,7 @@ function ProductHero({ product }) {
               transition={{ delay: 0.5 }}
               className="flex items-center mb-4"
             >
-              <img
+              <image
                 src="/svgs/check.svg"
                 alt="Check icon"
                 className="w-6 xl:w-[30px] mr-2 text-black"
@@ -106,7 +107,7 @@ function ProductHero({ product }) {
                 transition={{ delay: 0.6 + staggerDelay * index }}
                 className="flex items-center mb-4"
               >
-                <img
+                <image
                   src={highlight.image}
                   alt="Highlight icon"
                   className="mr-2"
