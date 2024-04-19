@@ -92,11 +92,18 @@ export default function Nav() {
 
   return (
     <header className="p-4 md:p-2 backdrop-blur-sm bg-slate-50 bg-opacity-10 shadow-sm">
-      <nav className="flex w-full bg-transparent justify-between items-center md:px-8" aria-label="Global">
+      <nav
+        className="flex w-full bg-transparent justify-between items-center md:px-8"
+        aria-label="Global"
+      >
         <div className="flex md:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Timber | Sany</span>
-            <img className="h-14  md:h-16 lg:h-20 w-auto" src="/logo.png" alt="" />
+            <img
+              className="h-14  md:h-16 lg:h-20 w-auto"
+              src="/logo.png"
+              alt=""
+            />
           </a>
         </div>
         <div className="flex md:hidden">
@@ -120,7 +127,10 @@ export default function Nav() {
             >
               <Popover.Button className="flex items-center gap-x-1 text-lg uppercase font-bold leading-6 text-slate-800 hover:text-slate-500">
                 {categoria.name}
-                <ChevronDownIcon className="h-5 w-5 flex-none text-slate-800" aria-hidden="true" />
+                <ChevronDownIcon
+                  className="h-5 w-5 flex-none text-slate-800"
+                  aria-hidden="true"
+                />
               </Popover.Button>
               <Transition
                 as={Fragment}
@@ -146,14 +156,22 @@ export default function Nav() {
                           transition={{ duration: 0.3 }}
                           className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
                         >
-                          <item.icon className="h-6 w-6 text-stone-800 group-hover:text-red-700" aria-hidden="true" />
+                          <item.icon
+                            className="h-6 w-6 text-stone-800 group-hover:text-red-700"
+                            aria-hidden="true"
+                          />
                         </motion.div>
                         <div className="flex-auto">
-                          <a href={item.href} className="block font-semibold text-stone-900">
+                          <a
+                            href={item.href}
+                            className="block font-semibold text-stone-900"
+                          >
                             {item.name}
                             <span className="absolute inset-0" />
                           </a>
-                          <p className="mt-1 text-gray-600">{item.description}</p>
+                          <p className="mt-1 text-gray-600">
+                            {item.description}
+                          </p>
                         </div>
                       </motion.div>
                     ))}
@@ -164,7 +182,12 @@ export default function Nav() {
           ))}
         </Popover.Group>
         <div className="hidden md:flex md:flex-1 md:justify-end">
-          <a href="https://grupotimber.com.br" className="text-lg font-semibold uppercase leading-6 text-slate-800 hover:text-red-700">Grupo Timber</a>
+          <a
+            href="https://grupotimber.com.br"
+            className="text-lg font-semibold uppercase leading-6 text-slate-800 hover:text-red-700"
+          >
+            Grupo Timber
+          </a>
         </div>
       </nav>
       <Dialog
@@ -193,8 +216,8 @@ export default function Nav() {
               {/* Conteúdo do menu Mobile */}
               <div className="p-6">
                 {/* LOGO */}
-                <div className="flex items-center justify-between">
-                  <a href="#" className="-m-1.5 p-1.5">
+                <div className="flex items-center justify-between mb-6">
+                  <a href="/" className="-m-1.5 p-1.5">
                     <span className="sr-only">Timber | Sany</span>
                     <img className="h-14 w-auto" src="/logo.png" alt="" />
                   </a>
@@ -209,82 +232,61 @@ export default function Nav() {
                 </div>
 
                 {/* MENU CONTENT */}
-                <div className=" ">
-                  <div className="">
-                    <div className="">
-                      <div className="py-6 px-2 ">
-                        {/* Produtos */}
-                        <Disclosure
-                          as="div"
-                          className="w-full rounded-lg my-6 text-xl font-semibold text-slate-800"
-                        >
-                          {({ open }) => (
-                            <>
-                              <Disclosure.Button className="flex w-full items-center justify-between rounded-lg  pr-3.5 text-xl font-semibold text-gray-900">
-                                Produtos
-                                <ChevronDownIcon
-                                  className={classNames(
-                                    open ? "rotate-180" : "",
-                                    "h-8 w-8 flex-none"
-                                  )}
-                                  aria-hidden="true"
-                                />
-                              </Disclosure.Button>
-                              <Disclosure.Panel className="mt-2  space-y-2">
-                                {produtos.map((item) => (
-                                  <Disclosure.Button
-                                    key={item.name}
-                                    as="a"
-                                    href={item.href}
-                                    className="block rounded-xl py-2 bg-white pl-6 pr-3 font-semibold text-gray-900 flex gap-2 items-center"
-                                  >
-                                    <item.icon
-                                      className="h-8 w-8 flex-none text-red-600"
-                                      aria-hidden="true"
-                                    />
-                                    <span>{item.name}</span>
-                                  </Disclosure.Button>
-                                ))}
-                              </Disclosure.Panel>
-                            </>
-                          )}
-                        </Disclosure>
+                <div>
+                  {/* Produtos */}
+                  <div className="my-6">
+                    {categorias.map((categoria) => (
+                      <Disclosure
+                        key={categoria.name}
+                        as="div"
+                        className="mb-2"
+                      >
+                        {({ open }) => (
+                          <>
+                            <Disclosure.Button
+                              className={classNames(
+                                "flex w-full items-center justify-between pr-3.5 font-semibold text-slate-800",
+                                open ? "text-red-500" : ""
+                              )}
+                            >
+                              {categoria.name}
+                              <ChevronDownIcon
+                                className={classNames(
+                                  open ? "transform rotate-180" : "",
+                                  "h-8 w-8 flex-none"
+                                )}
+                                aria-hidden="true"
+                              />
+                            </Disclosure.Button>
+                            <Disclosure.Panel className="mt-2 rounded-xl">
+                              {categoria.items.map((item) => (
+                                <a
+                                  key={item.name}
+                                  href={item.href}
+                                  className="block py-2 bg-slate-100 pl-6 pr-3 font-semibold text-gray-900 flex items-center"
+                                >
+                                  <item.icon
+                                    className="h-8 w-8 flex-none text-red-600 mr-3"
+                                    aria-hidden="true"
+                                  />
+                                  <span>{item.name}</span>
+                                </a>
+                              ))}
+                            </Disclosure.Panel>
+                          </>
+                        )}
+                      </Disclosure>
+                    ))}
+                  </div>
 
-                        {/* Sobre */}
-                        <div className="w-full rounded-lg my-6 text-xl font-semibold text-slate-800">
-                          <a href="/sobre" className="">
-                            Sobre
-                          </a>
-                        </div>
-
-                        {/* Grupo Timber */}
-                        <div className="w-full rounded-lg my-6 text-xl font-semibold text-slate-800">
-                          <a
-                            href="https://grupotimber.com.br"
-                            className="flex w-full items-center justify-between rounded-lg py-2 pr-3.5 text-xl font-semibold text-gray-900"
-                          >
-                            Grupo Timber
-                          </a>
-                        </div>
-                      </div>
-
-                      {/* Contato e Categorias*/}
-                      <div className="grid grid-cols-2 w-full b-0 divide-x rounded-lg divide-gray-900/5 bg-white px-2 py-3 fixed left-0 bottom-0">
-                        {callsToAction.map((item) => (
-                          <a
-                            className="flex items-center justify-center gap-x-4 p-3 text-lg font-semibold leading-6 text-gray-900"
-                            key={item.name}
-                            href={item.href}
-                          >
-                            <item.icon
-                              className="h-5 w-5 flex-none text-gray-400"
-                              aria-hidden="true"
-                            />
-                            {item.name}
-                          </a>
-                        ))}
-                      </div>
-                    </div>
+                  {/* Grupo Timber */}
+                  <div className="my-6 ">
+                    <a
+                      href="https://grupotimber.com.br"
+                      className="font-semibold text-slate-800 block position-base"
+                    >
+                      Grupo Timber
+                    </a>
                   </div>
                 </div>
               </div>
