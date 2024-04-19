@@ -1,0 +1,37 @@
+name: Simple Next.js CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  list-directories:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: List Directories
+        run: ls -l
+
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: List Branches
+        run: git branch -a
+
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Deploy
+        run: echo "Hello World!"
