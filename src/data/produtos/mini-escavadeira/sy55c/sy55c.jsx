@@ -2,7 +2,7 @@ const SY55C = {
   categoria: "Mini Escavadeira",
   name: "SANY SY55C",
   desc: "A mini escavadeira Sany SY55C possui motor potente, ideal para operações em diferentes ambientes, desde construções urbanas até locais mais complexos como pedreiras. Com um design robusto e durável, oferece eficiência e confiabilidade em todas as operações.",
-  image: "/miniEscavadeira/sy55c/2.png",
+  image: "/miniEscavadeira/sy55c/3.png",
   features: {
     high1: {
       descrição: "Peso Operacional: 5780 KG",
