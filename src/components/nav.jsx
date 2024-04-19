@@ -100,13 +100,13 @@ export default function Nav() {
           <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Timber | Sany</span>
             <img
-              className="h-5  md:h-16 lg:h-10 w-auto text-black"
+              className="h-8  lg:h-8 = w-auto text-black"
               src="/Timber x Sany BL.png"
               alt=""
             />
           </a>
         </div>
-        <div className="flex md:hidden">
+        <div className="flex lg:hidden">
           <button
             type="button"
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
@@ -117,7 +117,7 @@ export default function Nav() {
           </button>
         </div>
 
-        <Popover.Group className="hidden md:flex md:gap-x-12 focus:text-slate-600">
+        <Popover.Group className="hidden mx-6 lg:flex gap-x-3 focus:text-slate-600">
           {categorias.map((categoria) => (
             <Popover
               key={categoria.name}
@@ -125,7 +125,7 @@ export default function Nav() {
               onMouseEnter={() => setHoveringCategoria(categoria.name)} // Atualiza o estado da categoria ao entrar
               onMouseLeave={() => setHoveringCategoria(null)} // Reseta o estado da categoria ao sair
             >
-              <Popover.Button className="flex items-center gap-x-1 text-lg uppercase font-bold leading-6 text-slate-950 hover:text-slate-600">
+              <Popover.Button className="flex items-center gap-x-1 lg:text-xs xl:text-base xl:py-4 uppercase font-bold leading-6 text-slate-950 hover:text-slate-600">
                 {categoria.name}
                 <ChevronDownIcon
                   className="h-5 w-5 flex-none text-slate-800"
@@ -181,7 +181,7 @@ export default function Nav() {
             </Popover>
           ))}
         </Popover.Group>
-        <div className="hidden md:flex md:flex-1 md:justify-end">
+        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a
             href="https://grupotimber.com.br"
             className="text-lg font-semibold uppercase leading-6 text-slate-800 hover:text-red-700"
@@ -219,7 +219,7 @@ export default function Nav() {
                 <div className="flex items-center justify-between mb-6">
                   <a href="/" className="-m-1.5 p-1.5">
                     <span className="sr-only">Timber | Sany</span>
-                    <img className="h-14 w-auto" src="/logo.png" alt="" />
+                    <img className="h-8 w-auto" src="/Timber x Sany BL.png" alt="" />
                   </a>
                   <button
                     type="button"
