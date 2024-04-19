@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import image from 'next/image'
 
 function ProductHero({ product }) {
   const [inView, setInView] = useState(false);
@@ -56,7 +55,7 @@ function ProductHero({ product }) {
               transition={{ delay: 0.5 }}
               className="flex items-center mb-4"
             >
-              <image
+              <img
                 src="/svgs/check.svg"
                 alt="Check icon"
                 className="w-6 xl:w-[30px] mr-2 text-black"
@@ -107,7 +106,7 @@ function ProductHero({ product }) {
                 transition={{ delay: 0.6 + staggerDelay * index }}
                 className="flex items-center mb-4"
               >
-                <image
+                <img
                   src={highlight.image}
                   alt="Highlight icon"
                   className="mr-2"
