@@ -101,7 +101,7 @@ export default function Nav() {
             <span className="sr-only">Timber | Sany</span>
             <img
               className="h-8  lg:h-8 = w-auto text-black"
-              src="/Timber x Sany BL.png"
+              src="/Timber Construction BL.png"
               alt=""
             />
           </a>
