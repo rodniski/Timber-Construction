@@ -91,7 +91,7 @@ export default function Nav() {
   const [hoveringCategoria, setHoveringCategoria] = useState(null); // Estado para controlar qual categoria está sendo hover
 
   return (
-    <header className="p-4 md:p-2 backdrop-blur-sm bg-slate-50 bg-opacity-10 shadow-sm">
+    <header className="p-4 md:p-2 backdrop-blur-xl bg-slate-100 bg-opacity-70 shadow-sm">
       <nav
         className="flex w-full bg-transparent justify-between items-center md:px-8"
         aria-label="Global"
@@ -100,8 +100,8 @@ export default function Nav() {
           <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Timber | Sany</span>
             <img
-              className="h-14  md:h-16 lg:h-20 w-auto"
-              src="/logo.png"
+              className="h-8  md:h-16 lg:h-14 w-auto text-black"
+              src="/Timber x Sany BL.png"
               alt=""
             />
           </a>
@@ -125,7 +125,7 @@ export default function Nav() {
               onMouseEnter={() => setHoveringCategoria(categoria.name)} // Atualiza o estado da categoria ao entrar
               onMouseLeave={() => setHoveringCategoria(null)} // Reseta o estado da categoria ao sair
             >
-              <Popover.Button className="flex items-center gap-x-1 text-lg uppercase font-bold leading-6 text-slate-800 hover:text-slate-500">
+              <Popover.Button className="flex items-center gap-x-1 text-lg uppercase font-bold leading-6 text-slate-950 hover:text-slate-600">
                 {categoria.name}
                 <ChevronDownIcon
                   className="h-5 w-5 flex-none text-slate-800"
