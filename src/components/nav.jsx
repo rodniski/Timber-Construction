@@ -8,7 +8,7 @@ import {
   BuildingStorefrontIcon,
   BuildingOffice2Icon,
 } from "@heroicons/react/24/outline";
-import { ChevronDownIcon} from "@heroicons/react/20/solid";
+import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { TbBackhoe } from "react-icons/tb";
 import { MdEditRoad } from "react-icons/md";
 import { FaMountainCity } from "react-icons/fa6";
@@ -175,19 +175,13 @@ export default function Nav() {
           >
             Sobre
           </a>
+        </Popover.Group>
+        <div className="hidden md:flex md:flex-1 md:justify-end">
           <a
             href="https://grupotimber.com.br"
             className="text-lg font-semibold uppercase leading-6 text-white hover:text-red-700"
           >
             Grupo Timber
-          </a>
-        </Popover.Group>
-        <div className="hidden md:flex md:flex-1 md:justify-end">
-          <a
-            href="/contato"
-            className="text-lg font-semibold uppercase leading-6 text-white hover:text-red-700"
-          >
-            Contato <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
       </nav>
@@ -238,7 +232,10 @@ export default function Nav() {
                     <div className="">
                       <div className="py-6 px-2 ">
                         {/* Produtos */}
-                        <Disclosure as="div" className="w-full rounded-lg my-6 text-xl font-semibold text-slate-800">
+                        <Disclosure
+                          as="div"
+                          className="w-full rounded-lg my-6 text-xl font-semibold text-slate-800"
+                        >
                           {({ open }) => (
                             <>
                               <Disclosure.Button className="flex w-full items-center justify-between rounded-lg  pr-3.5 text-xl font-semibold text-gray-900">
@@ -287,7 +284,6 @@ export default function Nav() {
                             Grupo Timber
                           </a>
                         </div>
-
                       </div>
 
                       {/* Contato e Categorias*/}

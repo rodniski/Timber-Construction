@@ -45,6 +45,7 @@ const ContactForm = (produto) => {
               type="text"
               autoComplete="name"
               className="block w-full rounded-md border-0 px-3.5 py-2.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              required
             />
           </div>
         </div>
@@ -117,6 +118,7 @@ const ContactForm = (produto) => {
               maxLength="80"
               autoComplete="email"
               className="block w-full rounded-md border-0 px-3.5 py-2.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              required
             />
           </div>
         </div>
@@ -135,6 +137,7 @@ const ContactForm = (produto) => {
               maxLength="15"
               autoComplete="tel"
               className="block w-full rounded-md border-0 px-3.5 py-2.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              required
             />
           </div>
         </div>
@@ -153,6 +156,7 @@ const ContactForm = (produto) => {
               maxLength="20"
               autoComplete="postal-code"
               className="block w-full rounded-md border-0 px-3.5 py-2.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              required
             />
           </div>
         </div>
@@ -168,7 +172,9 @@ const ContactForm = (produto) => {
               id="00NHY000000OY6P"
               name="00NHY000000OY6P"
               title="Filial"
-              className="block w-full rounded-md border-0 px-3.5 py-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+              className="block w-full rounded-md border-0 px-3.5 py-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              required>
+                
               <option value="">Selecione a filial</option>
               <option value="Curitiba - PR">Curitiba - PR</option>
               <option value="Guaíba - RS">Guaíba - RS</option>
@@ -189,6 +195,7 @@ const ContactForm = (produto) => {
               name="00NHY000000QHkf"
               rows="4"
               className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              required
             ></textarea>
           </div>
         </div>
@@ -199,7 +206,7 @@ const ContactForm = (produto) => {
             className="bg-red-600 hover:bg-red-500 text-white font-medium py-[10px] px-[182px] rounded-lg text-lg mb-10"
           >
             Enviar
-          </button>
+          </button>n
         </div>
     </form>
   );

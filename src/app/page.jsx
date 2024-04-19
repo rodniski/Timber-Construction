@@ -44,24 +44,6 @@ const Homepage = () => {
           >
             Nossos Produtos
           </a>
-
-          <button className="p-4 rounded-lg text-lg flex flex-row gap-1 font-bold text-white hover:text-red-700 hover:ring-red-700 items-center">
-            Entre em contato
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth="1.5"
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="m8.25 4.5 7.5 7.5-7.5 7.5"
-              />
-            </svg>
-          </button>
         </div>
       </div>
     </motion.div>
