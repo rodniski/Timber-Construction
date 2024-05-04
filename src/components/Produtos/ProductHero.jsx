@@ -25,7 +25,7 @@ function ProductHero({ product }) {
   const staggerDelay = 0.1;
 
   return (
-    <div className="bg-slate-100 flex md:justify-between my-16 xl:h-[75vh] xl:flex-row flex-col items-center mx-6 gap-5">
+    <div className="bg-slate-100 flex md:justify-between my-40 xl:h-[75vh] xl:flex-row flex-col items-center mx-6 gap-5">
       {/* Conteúdo da esquerda */}
       <div className="w-full mb-6 md:mb-0">
         {/* Categoria */}

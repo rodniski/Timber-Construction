@@ -1,5 +1,5 @@
 "use client";
-
+import AboutPage from "./sobre/page"
 import { motion } from "framer-motion";
 import Head from 'next/head';
 
@@ -27,7 +27,8 @@ const Homepage = () => {
       >
         <source src="/site/banner.mp4" type="video/mp4" />
       </video>
-      <div className="absolute backdrop-blur-xl bg-slate-700 bg-opacity-40 p-3 md:p-8 w-[80%] md:w-1/2 rounded-2xl flex flex-col items-center justify-center shadow-lg">
+      <div className="absolute backdrop-blur-xl bg-slate-950 bg-opacity-60 p-3 md:p-8 w-[80%] md:w-1/2 rounded-2xl flex flex-col items-center justify-center shadow-lg">
+        <img src="/sany.png" alt="" className="h-20 mb-8"/>
         <h1 className="text-white text-2xl md:text-4xl lg:text-5xl font-bold mb-8 text-center">
           Excelência na <span className="underline decoration-red-600	">Construção</span> <br />{" "}
           <span className="underline decoration-red-600">Inovação</span> em Maquinário.
@@ -44,27 +45,11 @@ const Homepage = () => {
           >
             Nossos Produtos
           </a>
-
-          <button className="p-4 rounded-lg text-lg flex flex-row gap-1 font-bold text-white hover:text-red-700 hover:ring-red-700 items-center">
-            Entre em contato
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth="1.5"
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="m8.25 4.5 7.5 7.5-7.5 7.5"
-              />
-            </svg>
-          </button>
         </div>
       </div>
+      
     </motion.div>
+    <AboutPage/>
     </>
   );
 };
