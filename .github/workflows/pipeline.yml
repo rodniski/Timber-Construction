@@ -1,27 +1,36 @@
-name: Build
+name: CI with SonarQube Analysis
 
 on:
   push:
     branches:
       - main
 
-
 jobs:
-  build:
-    name: Build and analyze
+  build-and-analyze:
+    name: Build, test and analyze with SonarQube
     runs-on: ubuntu-latest
     
     steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
-      - uses: sonarsource/sonarqube-scan-action@master
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      # Passos para construir e testar sua aplicação
+      - name: Build and test
+        run: |
+          docker build -t myapp .
+          docker run myapp npm test
+
+      # Passos para executar a análise com SonarQube
+      - name: Setup SonarQube
+        uses: sonarsource/sonarqube-scan-action@master
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-      # If you wish to fail your job when the Quality Gate is red, uncomment the
-      # following lines. This would typically be used to fail a deployment.
-      # - uses: sonarsource/sonarqube-quality-gate-action@master
-      #   timeout-minutes: 5
-      #   env:
-      #     SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+
+      # Se desejar falhar o job caso o Quality Gate esteja vermelho
+      # descomente as seguintes linhas
+      #- name: Check Quality Gate
+      #  uses: sonarsource/sonarqube-quality-gate-action@master
+      #  timeout-minutes: 5
+      #  env:
+      #    SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
