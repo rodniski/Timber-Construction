@@ -8,6 +8,9 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "scripts": {
+    "test": "jest"
+  },  
   "dependencies": {
     "@headlessui/react": "^1.7.18",
     "@heroicons/react": "^2.1.1",
