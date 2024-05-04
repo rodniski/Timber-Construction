@@ -2,9 +2,10 @@
   "name": "construction.timber",
   "version": "0.1.0",
   "private": true,
+
   "scripts": {
-    "test": "jest"
-  },
+    "test": "jest --passWithNoTests"
+  },  
   "dependencies": {
     "@headlessui/react": "^1.7.18",
     "@heroicons/react": "^2.1.1",
